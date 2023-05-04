@@ -4,7 +4,7 @@
 #### 我们在安装Rust开发环境时并不希望它安装在我们的`C`盘中破坏我们`C`盘稳定的系统环境，所以我们希望将环境搭建在其他空闲磁盘下,比如在`E`盘下新建一个名称为`Rust`的文件夹专门用来存放Rust安装的所有环境，以下所有操作都是基于此文件夹展开的
 ##### 1.新建一个名为`rustup`的文件夹，并将此`E:\Rust\rustup`路径添加到环境变量`RUSTUP_HOME`中
 ##### 2.新建一个名为`cargo`的文件夹，并将此`E:\Rust\cargo`路径添加到环境变量`CARGO_HOME`中
-#### 你可以通过设置环境变量来自定义Rust开发环境的安装目录。你需要设置两个环境变量：RUSTUP_HOME和CARGO_HOME。RUSTUP_HOME用于指定rustup的安装目录，而CARGO_HOME用于指定cargo的安装目录1。例如，如果你想将Rust开发环境安装在D盘的Rust文件夹下，你可以将RUSTUP_HOME和CARGO_HOME分别设置为D:\Rust\rustup和D:\Rust\cargo。然后再运行安装程序来安装Rust开发环境。
+##### 3.Rust开发环境的安装请看[此教程](https://blog.csdn.net/cnds123/article/details/105770367)
 
 #### 如果你使用的是Rust语言，你可以使用cargo命令来构建你的项目。cargo是Rust的官方构建工具和包管理器，它可以帮助你构建、测试和打包你的Rust项目。你可以在命令行中进入你的项目目录，然后运行cargo build --release命令来构建你的项目。这将在target/release目录下生成一个可执行文件。如果你想将整个项目打包为一个单独的可执行文件，你可以考虑使用第三方工具，例如cargo-bundle。它可以帮助你将你的Rust项目打包为一个独立的应用程序，包括所有依赖项和资源文件。
 
