@@ -7,3 +7,16 @@
 #### 如果你使用的是Rust语言，你可以使用cargo命令来构建你的项目。cargo是Rust的官方构建工具和包管理器，它可以帮助你构建、测试和打包你的Rust项目。你可以在命令行中进入你的项目目录，然后运行cargo build --release命令来构建你的项目。这将在target/release目录下生成一个可执行文件。如果你想将整个项目打包为一个单独的可执行文件，你可以考虑使用第三方工具，例如cargo-bundle。它可以帮助你将你的Rust项目打包为一个独立的应用程序，包括所有依赖项和资源文件。
 
 #### cargo-bundle是一个第三方工具，可以帮助你将你的Rust项目打包为一个独立的应用程序。要安装cargo-bundle，你可以运行cargo install cargo-bundle命令。这将把最新版本的cargo-bundle作为子命令添加到你的默认cargo安装中1。安装完成后，你需要在你的项目的Cargo.toml文件中添加一个[package.metadata.bundle]部分。这一部分描述了生成的包的各种属性，例如名称、图标、描述、版权以及任何生成额外数据所需的打包脚本。完整的清单格式可以在cargo-bundle的GitHub页面上找到1。要构建一个应用程序包，只需在你的项目目录（其中包含Cargo.toml文件）中运行cargo bundle命令。如果你想打包一个发布版本，你必须在调用时添加--release标志。
+
+<font face="仿宋">这是宋体</font>
+<font face="楷体">这是楷体</font>
+<font face="courier New">This is courier New</font>
+
+<font face="仿宋" color=red>这是红色宋体</font>
+<font face="楷体" color="blue">这是蓝色楷体</font>
+<font face="courier New" color=	#20B2AA>This is LightSeaGreen courier New</font>
+
+这是默认字体
+<font face="仿宋" color=red size=4>这是红色4号宋体</font>
+<font face="楷体" color="blue" size=5>这是蓝色5号楷体</font>
+<font face="courier New" color=	#20B2AA size=6>This is LightSeaGreen courier New size 6</font>
