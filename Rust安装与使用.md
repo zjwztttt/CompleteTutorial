@@ -9,3 +9,4 @@
 #### cargo-bundle是一个第三方工具，可以帮助你将你的Rust项目打包为一个独立的应用程序。要安装cargo-bundle，你可以运行cargo install cargo-bundle命令。这将把最新版本的cargo-bundle作为子命令添加到你的默认cargo安装中1。安装完成后，你需要在你的项目的Cargo.toml文件中添加一个[package.metadata.bundle]部分。这一部分描述了生成的包的各种属性，例如名称、图标、描述、版权以及任何生成额外数据所需的打包脚本。完整的清单格式可以在cargo-bundle的GitHub页面上找到1。要构建一个应用程序包，只需在你的项目目录（其中包含Cargo.toml文件）中运行cargo bundle命令。如果你想打包一个发布版本，你必须在调用时添加--release标志。
 
 <option>这是宋体</option>
+<option>这是选项卡2</option>
