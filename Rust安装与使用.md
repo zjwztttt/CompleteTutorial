@@ -12,5 +12,7 @@
     cargo install cargo-bundle
 #### 在`cargo.toml`文件中的`[package]`块下添加以下信息(需要将引号中的内容改成你的项目目录)
     description = "Your package description"
-#### 在`Cargo.toml`文件中添加一个[package.metadata.bundle]块。这一部分描述了生成的包的各种属性，例如名称、图标、描述、版权以及任何生成额外数据所需的打包脚本。完整的清单格式可以在`cargo-bundle`的(GitHub页面)[https://github.com/burtonageo/cargo-bundle]上找到
+#### 在`Cargo.toml`文件中添加以下块
+    [package.metadata.bundle]
+##### 这一部分描述了生成的包的各种属性，例如名称、图标、描述、版权以及任何生成额外数据所需的打包脚本。完整的清单格式可以在`cargo-bundle`的[GitHub页面](https://github.com/burtonageo/cargo-bundle)上找到
 #### 要构建一个应用程序包，只需在你的项目目录（其中包含Cargo.toml文件）中运行cargo bundle命令。如果你想打包一个发布版本，你必须在调用时添加--release标志。
