@@ -47,14 +47,19 @@
     wasm-pack -V
 ### 几个`WebAssembly`模块的栗子
 #### 例子1
+    // 导入wasm_bindgen库
     extern crate wasm_bindgen;
+    // 从wasm_bindgen库中导入prelude模块
     use wasm_bindgen::prelude::*;
+    // 声明一个名为alert的外部函数
     #[wasm_bindgen]
     extern {
         pub fn alert(s: &str);
     }
+    // 声明一个名为greet的导出函数
     #[wasm_bindgen]
     pub fn greet(name: &str) {
+        // 调用alert函数并显示一条消息
         alert(&format!("Hello, {}!", name));
     }
 ### 例子2
