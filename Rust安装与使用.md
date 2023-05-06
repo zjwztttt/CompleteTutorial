@@ -45,3 +45,21 @@
     rustc -V
     cargo -V
     wasm-pack -V
+### 前端加载WebAssembly模块的几个小栗子
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>hello-wasm example</title>
+        </head>
+        <body>
+            <script type="module">
+                import init, {greet} from "./pkg/hello_wasm.js";
+                init().then(() => {
+                    greet("WebAssembly")
+                });
+            </script>
+        </body>
+    </html>
+#### 以上代码可以用以下命令运行
+    python3 -m http.server
