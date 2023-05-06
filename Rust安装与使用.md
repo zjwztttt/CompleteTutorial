@@ -31,3 +31,10 @@
     rustup update
 ### 卸载Rust环境
     rustup self uninstall
+### 编译`WebAssembly`
+#### 安装`wasm-pack`包
+    cargo install wasm-pack
+#### 新建一个`wasm`包
+    cargo new --lib hello-wasm
+#### 构建`wasm`包
+    wasm-pack build --target web
