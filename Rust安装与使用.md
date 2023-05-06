@@ -5,10 +5,16 @@
 ##### 1.新建一个名为`rustup`的文件夹，并将此`E:\Rust\rustup`路径添加到环境变量`RUSTUP_HOME`中
 ##### 2.新建一个名为`cargo`的文件夹，并将此`E:\Rust\cargo`路径添加到环境变量`CARGO_HOME`中
 ##### 3.Rust开发环境的安装请看[此教程](https://blog.csdn.net/cnds123/article/details/105770367)
+### 在安装`rustup`时选择2，在需要输入`host triple`时输入以下命令
+    x86_64-pc-windows-gnu
+### 安装完成后运行以下命令
+    rustup toolchain install stable
+#### 以上是随`rustup`一起安装`mingw`的方式
 ### 安装`mingw`
     rustup toolchain install stable-x86_64-pc-windows-gnu 
 ### 修改`MSVC`依赖为`mingw`
     rustup default stable-x86_64-pc-windows-gnu
+#### 以上是单独安装`mingw`的方式
 ### 使用`cargo build`打包项目(在命令行中进入你的项目目录)
     cargo build --release
 ### 使用`cargo-bundle`打包项目
