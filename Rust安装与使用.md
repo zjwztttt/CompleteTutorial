@@ -36,7 +36,7 @@
     cargo install wasm-pack
 #### 添加目标 wasm32-unknown-unknown
     rustup target add wasm32-unknown-unknown
-#### 新建一个`wasm`包(wasm代码可以看[这篇教程](https://developer.mozilla.org/zh-CN/docs/WebAssembly/Rust_to_wasm))
+#### 新建一个`wasm`包(wasm代码可以看[这篇教程](https://developer.mozilla.org/zh-CN/docs/WebAssembly/Rust_to_wasm)或者[这篇教程](https://www.wkwkk.com/articles/1c90cd3673398f7f.html))
     cargo new --lib hello-wasm
 #### 构建`wasm`包
     wasm-pack build --target web
@@ -46,6 +46,7 @@
     cargo -V
     wasm-pack -V
 ### 前端加载WebAssembly模块的几个小栗子
+#### 例1
     <!DOCTYPE html>
     <html>
         <head>
@@ -63,3 +64,4 @@
     </html>
 #### 以上代码可以用以下命令运行
     python3 -m http.server
+#### 例2
