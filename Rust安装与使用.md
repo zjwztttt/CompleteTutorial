@@ -34,6 +34,8 @@
 ### 编译`WebAssembly`
 #### 安装`wasm-pack`包(windows请获取[安装文件](https://rustwasm.github.io/wasm-pack/installer/))
     cargo install wasm-pack
+#### 添加目标 wasm32-unknown-unknown
+    rustup target add wasm32-unknown-unknown
 #### 新建一个`wasm`包
     cargo new --lib hello-wasm
 #### 构建`wasm`包
