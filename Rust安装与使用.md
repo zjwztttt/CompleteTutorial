@@ -40,3 +40,8 @@
     cargo new --lib hello-wasm
 #### 构建`wasm`包
     wasm-pack build --target web
+### 验证版本
+    rustup -V
+    rustc -V
+    cargo -V
+    wasm-pack -V
