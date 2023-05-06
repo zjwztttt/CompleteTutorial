@@ -27,5 +27,7 @@
 ##### 这一部分描述了生成的包的各种属性，例如名称、图标、描述、版权以及任何生成额外数据所需的打包脚本。完整的清单格式可以查阅`cargo-bundle`的[GitHub页面](https://github.com/burtonageo/cargo-bundle)
 #### 使用以下命令打包一个发布版本
     cargo bundle --release
-#### 卸载Rust环境
+### 更新`Rust`环境
+    rustup update
+### 卸载Rust环境
     rustup self uninstall
