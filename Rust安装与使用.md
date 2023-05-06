@@ -65,6 +65,25 @@
         alert(&format!("Hello, {}!", name));
     }
 ### 例子2
+    // 导入wasm_bindgen库
+    extern crate wasm_bindgen;
+    // 从wasm_bindgen库中导入prelude模块
+    use wasm_bindgen::prelude::*;
+
+    // 声明一个名为console_log的外部函数
+    #[wasm_bindgen]
+    extern {
+        #[wasm_bindgen(js_namespace = console)]
+        fn log(s: &str);
+    }
+
+    // 声明一个名为greet的导出函数
+    #[wasm_bindgen]
+    pub fn greet(name: &str) {
+        // 调用console_log函数并显示一条消息
+        log(&format!("Hello, {}!", name));
+    }
+### 例子3
 
 ### 前端加载WebAssembly模块的几个小栗子
 #### 例1
