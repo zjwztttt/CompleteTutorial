@@ -36,7 +36,7 @@
     cargo install wasm-pack
 #### 添加目标 wasm32-unknown-unknown
     rustup target add wasm32-unknown-unknown
-#### 新建一个`wasm`包
+#### 新建一个`wasm`包(wasm代码可以看[这篇教程](https://developer.mozilla.org/zh-CN/docs/WebAssembly/Rust_to_wasm))
     cargo new --lib hello-wasm
 #### 构建`wasm`包
     wasm-pack build --target web
