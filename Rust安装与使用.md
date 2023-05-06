@@ -105,7 +105,8 @@
             </script>
         </body>
     </html>
-#### 以上代码可以用以下命令运行
-    python3 -m http.server
 #### 例2
+
+### 以上代码可以用以下命令运行
+    python3 -m http.server
 
