@@ -45,6 +45,20 @@
     rustc -V
     cargo -V
     wasm-pack -V
+### 几个`WebAssembly`模块的栗子
+#### 例子1
+    extern crate wasm_bindgen;
+    use wasm_bindgen::prelude::*;
+    #[wasm_bindgen]
+    extern {
+        pub fn alert(s: &str);
+    }
+    #[wasm_bindgen]
+    pub fn greet(name: &str) {
+        alert(&format!("Hello, {}!", name));
+    }
+### 例子2
+
 ### 前端加载WebAssembly模块的几个小栗子
 #### 例1
     <!DOCTYPE html>
@@ -54,8 +68,11 @@
             <title>hello-wasm example</title>
         </head>
         <body>
+            <!-- 导入WebAssembly模块 -->
             <script type="module">
+                // 导入WebAssembly模块并从中导入greet函数
                 import init, {greet} from "./pkg/hello_wasm.js";
+                // 初始化WebAssembly模块并调用greet函数
                 init().then(() => {
                     greet("WebAssembly")
                 });
