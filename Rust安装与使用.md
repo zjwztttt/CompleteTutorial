@@ -106,6 +106,30 @@
         </body>
     </html>
 #### 例2
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>hello-wasm example</title>
+        </head>
+        <body>
+		    <script type="module">
+			    // 导入WebAssembly模块并从中导入greet函数
+			    import init, {greet} from "./templates/pkg/hello_wasm.js";
+			
+			    fetch('https://api.ipify.org?format=json')
+				    .then(response => response.json())
+				    .then(data => {
+					    const ip = data.ip;
+					    // 初始化WebAssembly模块并调用greet函数
+					    init().then(() => {
+						    // 将IP地址传递给WebAssembly模块
+						    greet(ip);
+					    });
+				    });
+		    </script>
+        </body>
+    </html>
 
 ### 以上代码可以用以下命令运行
     python3 -m http.server
