@@ -30,8 +30,13 @@
 ### 在`Windows`电脑上编译`Linux`可执行文件
 #### 添加x86_64-unknown-linux-musl目标
 	rustup target add x86_64-unknown-linux-musl
-#### 执行编译
+#### 编译`Linux`执行程序
 	cargo build --target x86_64-unknown-linux-musl
+### 在`Windows`电脑上编译`Mac`可执行文件
+#### 添加x86_64-apple-darwin目标
+	rustup target add x86_64-apple-darwin
+#### 编译`Mac`执行程序
+	cargo build --target x86_64-apple-darwin
 ### 更新`Rust`环境
     rustup update
 ### 卸载Rust环境
