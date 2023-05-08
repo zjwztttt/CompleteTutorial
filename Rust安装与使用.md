@@ -31,22 +31,6 @@
 ##### 这一部分描述了生成的包的各种属性，例如名称、图标、描述、版权以及任何生成额外数据所需的打包脚本。完整的清单格式可以查阅`cargo-bundle`的[GitHub页面](https://github.com/burtonageo/cargo-bundle)
 #### 使用以下命令打包一个发布版本
     cargo bundle --release
-### 五、交叉编译工具链
-#### 编译`Linux`可执行文件
-#### 添加x86_64-unknown-linux-musl目标
-	rustup target add x86_64-unknown-linux-musl
-#### 编译`Linux`执行程序
-	cargo build --target x86_64-unknown-linux-musl
-### 在`Windows`电脑上编译`Mac`可执行文件
-#### 添加x86_64-apple-darwin目标
-	rustup target add x86_64-apple-darwin
-#### 编译`Mac`执行程序
-	cargo build --target x86_64-apple-darwin
-### 交叉编译切换回`windows`(分为两种)
-#### 1.添加x86_64-pc-windows-gnu目标
-	rustup target add x86_64-pc-windows-gnu
-#### 编译`Windows`可执行程序
-	cargo build --target x86_64-pc-windows-gnu
 ### 更新`Rust`环境
     rustup update
 ### 卸载Rust环境
