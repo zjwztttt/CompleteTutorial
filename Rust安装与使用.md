@@ -13,7 +13,7 @@
     x86_64-pc-windows-gnu
 ##### 安装完成后运行以下命令
     rustup toolchain install stable
-#### 2.单独安装`mingw`(此方法是针对已经安装完Rust开发环境后想将编译`Windows`可执行程序的环境切换为`mingu`的)
+#### 2.单独安装`mingw`(此方法是针对已经安装完Rust开发环境后想将交叉编译链库切换为`mingu`时)
     rustup toolchain install stable-x86_64-pc-windows-gnu
 ##### 修改依赖为`mingw`
     rustup default stable-x86_64-pc-windows-gnu
