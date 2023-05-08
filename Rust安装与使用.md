@@ -37,6 +37,11 @@
 	rustup target add x86_64-apple-darwin
 #### 编译`Mac`执行程序
 	cargo build --target x86_64-apple-darwin
+### 交叉编译切换回`windows`(分为两种)
+#### 1.添加x86_64-pc-windows-gnu目标
+	rustup target add x86_64-pc-windows-gnu
+#### 编译`Windows`可执行程序
+	cargo build --target x86_64-pc-windows-gnu
 ### 更新`Rust`环境
     rustup update
 ### 卸载Rust环境
