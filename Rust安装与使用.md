@@ -14,10 +14,14 @@
 ##### 安装完成后运行以下命令
     rustup toolchain install stable
 #### 2.单独安装(此方法是针对已经安装完Rust开发环境后想将编译`Windows`可执行程序的环境切换为`mingu`的)
-#### 安装`mingw`
+##### 安装`mingw`
     rustup toolchain install stable-x86_64-pc-windows-gnu
-#### 修改`MSVC`依赖为`mingw`
+##### 修改依赖为`mingw`
     rustup default stable-x86_64-pc-windows-gnu
+##### 安装`MSVC`
+    rustup toolchain install stable-x86_64-pc-windows-msvc
+##### 修改依赖为`MSVC`
+    rustup default stable-x86_64-pc-windows-msvc
 
 ### 四、编译程序
 #### 使用`cargo build`打包项目(在命令行中进入你的项目目录)
@@ -33,7 +37,7 @@
 #### 使用以下命令打包一个发布版本
     cargo bundle --release
 ### 五、交叉编译工具链
-#### 在`Windows`电脑上编译`Linux`可执行文件
+#### 编译`Linux`可执行文件
 #### 添加x86_64-unknown-linux-musl目标
 	rustup target add x86_64-unknown-linux-musl
 #### 编译`Linux`执行程序
@@ -48,10 +52,6 @@
 	rustup target add x86_64-pc-windows-gnu
 #### 编译`Windows`可执行程序
 	cargo build --target x86_64-pc-windows-gnu
-#### 2.添加x86_64-pc-windows-msvc目标
-	rustup target add x86_64-pc-windows-msvc
-#### 编译`Windows`可执行程序
-	cargo build --target x86_64-pc-windows-msvc
 ### 更新`Rust`环境
     rustup update
 ### 卸载Rust环境
