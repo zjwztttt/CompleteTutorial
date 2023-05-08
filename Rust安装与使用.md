@@ -42,6 +42,10 @@
 	rustup target add x86_64-pc-windows-gnu
 #### 编译`Windows`可执行程序
 	cargo build --target x86_64-pc-windows-gnu
+#### 2.添加x86_64-pc-windows-msvc目标
+	rustup target add x86_64-pc-windows-msvc
+#### 编译`Windows`可执行程序
+	cargo build --target x86_64-pc-windows-msvc
 ### 更新`Rust`环境
     rustup update
 ### 卸载Rust环境
