@@ -7,7 +7,7 @@
 ##### 2.新建一个名为`cargo`的文件夹，并将此`E:\Rust\cargo`路径添加到环境变量`CARGO_HOME`中
 ##### 3.Rust开发环境的安装请看[此教程](https://blog.csdn.net/cnds123/article/details/105770367)
 
-### 三、为Rust切换编译Windows可执行程序的环境
+### 三、为Rust切换交叉编译工具链(更多交叉编译工具链库请[参阅](https://doc.rust-lang.org/nightly/rustc/platform-support.html))
 #### 1.用`rustup-init.exe`安装(此方法只有在安装Rust开发环境时有效，已经安装完的无效)
 ##### 在安装`rust`开发环境时选择2，在需要输入`host triple`时输入以下命令
     x86_64-pc-windows-gnu
