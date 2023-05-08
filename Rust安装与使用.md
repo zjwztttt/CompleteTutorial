@@ -19,23 +19,23 @@
     rustup default stable-x86_64-pc-windows-gnu
 
 ### 四、编译程序
-#### 使用`cargo build`打包项目(在命令行中进入你的项目目录)
+#### 1.使用`cargo build`打包项目(在命令行中进入你的项目目录)
     cargo build --release
-#### 使用`cargo-bundle`打包项目
-##### cargo-bundle是一个第三方工具，可以帮助你将你的Rust项目打包为一个独立的应用程序，运行以下命令安装它
+#### 2.使用`cargo-bundle`打包项目
+##### 安装cargo-bundle
     cargo install cargo-bundle
 ##### 在`cargo.toml`文件中的`[package]`块下添加以下信息(需要将引号中的内容改成你的项目目录)
     description = "Your package description"
 ##### 在`Cargo.toml`文件中添加以下块
     [package.metadata.bundle]
-##### 这一部分描述了生成的包的各种属性，例如名称、图标、描述、版权以及任何生成额外数据所需的打包脚本。完整的清单格式可以查阅`cargo-bundle`的[GitHub页面](https://github.com/burtonageo/cargo-bundle)
-#### 使用以下命令打包一个发布版本
+###### 这一部分描述了生成的包的各种属性，例如名称、图标、描述、版权以及任何生成额外数据所需的打包脚本。完整的清单格式可以查阅`cargo-bundle`的[GitHub页面](https://github.com/burtonageo/cargo-bundle)
+##### 使用以下命令打包一个发布版本
     cargo bundle --release
-### 更新`Rust`环境
+### 五、更新`Rust`环境
     rustup update
-### 卸载Rust环境
+### 六、卸载Rust环境
     rustup self uninstall
-### 编译`WebAssembly`
+### 七、编译`WebAssembly`
 #### 安装`wasm-pack`包(windows请获取[安装文件](https://rustwasm.github.io/wasm-pack/installer/))
     cargo install wasm-pack
 #### 添加目标 wasm32-unknown-unknown
@@ -44,12 +44,12 @@
     cargo new --lib hello-wasm
 #### 构建`wasm`包
     wasm-pack build --target web
-### 验证版本
+### 八、验证版本
     rustup -V
     rustc -V
     cargo -V
     wasm-pack -V
-### 几个`WebAssembly`模块的栗子
+### 九、几个`WebAssembly`模块的栗子
 #### 例子1
     // 导入wasm_bindgen库
     extern crate wasm_bindgen;
