@@ -2,3 +2,7 @@
     tar -czvf 压缩文件名.tar.gz 文件夹名称
 ### 解压`.tar.gz`格式的压缩文件
     tar -xzvf 压缩文件名.tar.gz
+### 将文件夹压缩为`.zip`
+    zip -r 压缩文件名.zip 文件夹名称
+### 解压`.zip`格式的压缩文件
+    unzip 压缩文件名.zip
