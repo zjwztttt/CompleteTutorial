@@ -8,20 +8,15 @@
 ##### 3.Rust开发环境的安装请看[此教程](https://blog.csdn.net/cnds123/article/details/105770367)
 
 ### 三、为Rust切换交叉编译工具链(更多交叉编译工具链库请[参阅](https://doc.rust-lang.org/nightly/rustc/platform-support.html))
-#### 1.用`rustup-init.exe`安装(此方法只有在安装Rust开发环境时有效，已经安装完的无效)
+#### 1.用`rustup-init.exe`安装`mingw`(此方法只有在安装Rust开发环境时有效，已经安装完的无效)
 ##### 在安装`rust`开发环境时选择2，在需要输入`host triple`时输入以下命令
     x86_64-pc-windows-gnu
 ##### 安装完成后运行以下命令
     rustup toolchain install stable
-#### 2.单独安装(此方法是针对已经安装完Rust开发环境后想将编译`Windows`可执行程序的环境切换为`mingu`的)
-##### 安装`mingw`
+#### 2.单独安装`mingw`(此方法是针对已经安装完Rust开发环境后想将编译`Windows`可执行程序的环境切换为`mingu`的)
     rustup toolchain install stable-x86_64-pc-windows-gnu
 ##### 修改依赖为`mingw`
     rustup default stable-x86_64-pc-windows-gnu
-##### 安装`MSVC`
-    rustup toolchain install stable-x86_64-pc-windows-msvc
-##### 修改依赖为`MSVC`
-    rustup default stable-x86_64-pc-windows-msvc
 
 ### 四、编译程序
 #### 使用`cargo build`打包项目(在命令行中进入你的项目目录)
