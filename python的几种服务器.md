@@ -9,8 +9,8 @@
     def index():
         return render_template('index.html')
     
-    # 定义其他路由，请求方式为`POST`,也可以改成`GET`
-    @app.route('/save_url', methods=['POST'])
+    # 定义其他路由，请求方式为`GET`
+    @app.route('/hello', methods=['GET'])
     def save_url():
         return "Hello,world!"
     
@@ -32,16 +32,15 @@
     # 创建 Jinja2Templates 实例
     templates = Jinja2Templates(directory="templates")
 
-    # 定义路由和请求方法
-    # 定义异步函数，接收 Request 对象作为参数
+    #定义主页路由和函数, 接收 Request 对象作为参数
     @app.get("/", response_class=HTMLResponse)
     async def read_item(request: Request):
         # 返回 HTML 模板
         return templates.TemplateResponse("index.html", {"request": request})
     
-    # 定义其他路由，请求方式`post`，也可以改成`get`
-    @app.post('/other')
-    async def chatbot(request: Request):
+    # 定义其他路由，请求方式`get`
+    @app.get('/hello')
+    async def chatbot():
         return "Hello,world!"
     
     if __name__ == "__main__":
@@ -64,15 +63,14 @@
     # 创建 Jinja2Templates 实例
     templates = Jinja2Templates(directory="templates")
 
-    # 定义路由和请求方法
-    # 定义异步函数，接收 Request 对象作为参数
+    #定义主页路由和函数，接收 Request 对象作为参数
     @app.get("/", response_class=HTMLResponse)
     async def read_item(request: Request):
         # 返回 HTML 模板
         return templates.TemplateResponse("index.html", {"request": request})
     
-    # 定义其他路由，请求方式`post`，也可以改成`get`
-    @app.post('/POST/GPT_API')
+    # 定义其他路由，请求方式`get`
+    @app.get('/hello')
     async def chatbot():
         return "Hello,world!"
 
