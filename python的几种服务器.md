@@ -57,6 +57,7 @@
     from fastapi.templating import Jinja2Templates
     from hypercorn.config import Config  # 导入 Hypercorn 配置类
     from hypercorn.asyncio import serve  # 导入 Hypercorn serve 函数
+    import asyncio
 
     app = FastAPI()  # 创建 FastAPI 实例
     templates = Jinja2Templates(directory="templates")  # 创建 Jinja2Templates 实例
@@ -67,8 +68,12 @@
 
     if __name__ == "__main__":
         config = Config()  # 创建 Hypercorn 配置实例
-        config.bind = ["0.0.0.0:8080"]  # 设置绑定地址和端口号
-        serve(app, config)  # 启动应用程序
+        # 注意证书路径
+        config.certfile = "/etc/mycert/cert.pem"
+        config.keyfile = "/path/mycert/key.pem"
+        config.bind = ["0.0.0.0:5080"]  # 设置绑定地址和端口号
+        config.protocol = "h2"  # 启用HTTP2
+        asyncio.run(serve(app, config))  # 启动应用程序
 ### Gunicorn(WSGI服务器)
     gunicorn -w 4 -b 127.0.0.1:5000 app_name:app
 ### Daphne(基于Twisted的ASGI服务器)
