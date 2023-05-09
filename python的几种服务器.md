@@ -70,4 +70,5 @@
         config.bind = ["0.0.0.0:8080"]  # 设置绑定地址和端口号
         serve(app, config)  # 启动应用程序
 ### Gunicorn(WSGI服务器)
+    gunicorn -w 4 -b 127.0.0.1:5000 app_name:app
 ### Daphne(基于Twisted的ASGI服务器)
