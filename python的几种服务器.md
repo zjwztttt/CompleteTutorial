@@ -3,7 +3,7 @@
     # 创建Flask应用程序
     app = Flask(__name__, static_folder='templates')
     #定义主页路由和函数
-    @app.route('/')
+    @app.route('/', methods=['GET'])
     def index():
         return render_template('index.html')
     
@@ -14,5 +14,15 @@
             debug=True,
             load_dotenv=False,#False OR True
         )
-#### Fastapi
+#### Fastapi + uvicorn
+    from fastapi import FastAPI
+    import uvicorn
+    app = FastAPI()
     
+    if __name__ == "__main__":
+        uvicorn.run(
+            app,
+            host=web_host,
+            port=web_port,
+            #config=config
+        )
