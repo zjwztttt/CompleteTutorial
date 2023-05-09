@@ -37,9 +37,8 @@
     if __name__ == "__main__":
         uvicorn.run(
             app,
-            host=web_host,
-            port=web_port,
-            #config=config
+            host='192.168.31.28',
+            port=8080,
         )
 ### Hypercorn(基于asyncio的ASGI服务器)
 ### Gunicorn(WSGI服务器)
