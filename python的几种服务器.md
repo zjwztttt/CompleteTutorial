@@ -1,9 +1,10 @@
 ### Flask
-    from flask import Flask, request, jsonify, render_template
-    # 创建Flask应用程序
+    from flask import Flask
+    # 创建Flask应用程序，指定静态文件目录
     app = Flask(__name__, static_folder='templates')
+    
     #定义主页路由和函数
-    @app.route('/', methods=['GET'])
+    @app.route('/')
     def index():
         return render_template('index.html')
     
@@ -14,9 +15,10 @@
             debug=True,
             load_dotenv=False,#False OR True
         )
-#### Fastapi + uvicorn
+#### Fastapi + Uvicorn(基于sans-io hyper、h11、h2和wsproto库的ASGI服务器)
     from fastapi import FastAPI
     import uvicorn
+    
     app = FastAPI()
     
     if __name__ == "__main__":
@@ -26,3 +28,6 @@
             port=web_port,
             #config=config
         )
+### Hypercorn(基于asyncio的ASGI服务器)
+### Gunicorn(WSGI服务器)
+### Daphne(基于Twisted的ASGI服务器)
