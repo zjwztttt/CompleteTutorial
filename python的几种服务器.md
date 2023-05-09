@@ -1,5 +1,6 @@
 ### Flask
     from flask import Flask
+    
     # 创建Flask应用程序，指定静态文件目录
     app = Flask(__name__, static_folder='templates')
     
