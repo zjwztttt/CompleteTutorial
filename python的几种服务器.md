@@ -22,16 +22,20 @@
             load_dotenv=False,#False OR True
         )
 #### Fastapi + Uvicorn(基于sans-io hyper、h11、h2和wsproto库的ASGI服务器)
-    from fastapi import FastAPI, Request  # 导入 FastAPI 框架和 Request 类
-    from fastapi.responses import HTMLResponse  # 导入 HTMLResponse 类
-    from fastapi.templating import Jinja2Templates  # 导入 Jinja2Templates 类
-    import uvicorn  # 导入 uvicorn 模块
+    from fastapi import FastAPI, Request
+    from fastapi.responses import HTMLResponse
+    from fastapi.templating import Jinja2Templates
+    import uvicorn
 
-    app = FastAPI()  # 创建 FastAPI 实例
-    templates = Jinja2Templates(directory="templates")  # 创建 Jinja2Templates 实例
+    # 创建 FastAPI 实例
+    app = FastAPI()
+    # 创建 Jinja2Templates 实例
+    templates = Jinja2Templates(directory="templates")
 
-    @app.get("/", response_class=HTMLResponse)  # 定义路由和请求方法
-    async def read_item(request: Request):  # 定义异步函数，接收 Request 对象作为参数
+    # 定义路由和请求方法
+    # 定义异步函数，接收 Request 对象作为参数
+    @app.get("/", response_class=HTMLResponse)
+    async def read_item(request: Request):
         # 返回 HTML 模板
         return templates.TemplateResponse("index.html", {"request": request})
     
