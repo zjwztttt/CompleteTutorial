@@ -11,4 +11,4 @@
 ### 以PID关闭进程
     kill -9 60120
 ### 以PID文件关闭进程
-    
+    kill $(cat /var/run/hypercorn.pid)
