@@ -47,5 +47,22 @@
             port=8080,
         )
 ### Hypercorn(基于asyncio的ASGI服务器)
+    from fastapi import FastAPI, Request
+    from fastapi.responses import HTMLResponse
+    from fastapi.templating import Jinja2Templates
+    from hypercorn.config import Config  # 导入 Hypercorn 配置类
+    from hypercorn.asyncio import serve  # 导入 Hypercorn serve 函数
+
+    app = FastAPI()  # 创建 FastAPI 实例
+    templates = Jinja2Templates(directory="templates")  # 创建 Jinja2Templates 实例
+
+    @app.get("/", response_class=HTMLResponse)  # 定义路由和请求方法
+    async def read_item(request: Request):  # 定义异步函数，接收 Request 对象作为参数
+        return templates.TemplateResponse("index.html", {"request": request})  # 返回 HTML 模板
+
+    if __name__ == "__main__":
+        config = Config()  # 创建 Hypercorn 配置实例
+        config.bind = ["0.0.0.0:8080"]  # 设置绑定地址和端口号
+        serve(app, config)  # 启动应用程序
 ### Gunicorn(WSGI服务器)
 ### Daphne(基于Twisted的ASGI服务器)
