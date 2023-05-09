@@ -59,21 +59,30 @@
     from hypercorn.asyncio import serve  # 导入 Hypercorn serve 函数
     import asyncio
 
-    app = FastAPI()  # 创建 FastAPI 实例
-    templates = Jinja2Templates(directory="templates")  # 创建 Jinja2Templates 实例
+    # 创建 FastAPI 实例
+    app = FastAPI()
+    # 创建 Jinja2Templates 实例
+    templates = Jinja2Templates(directory="templates")
 
-    @app.get("/", response_class=HTMLResponse)  # 定义路由和请求方法
-    async def read_item(request: Request):  # 定义异步函数，接收 Request 对象作为参数
-        return templates.TemplateResponse("index.html", {"request": request})  # 返回 HTML 模板
+    # 定义路由和请求方法
+    # 定义异步函数，接收 Request 对象作为参数
+    @app.get("/", response_class=HTMLResponse)
+    async def read_item(request: Request):
+        # 返回 HTML 模板
+        return templates.TemplateResponse("index.html", {"request": request})
 
     if __name__ == "__main__":
-        config = Config()  # 创建 Hypercorn 配置实例
+        # 创建 Hypercorn 配置实例
+        config = Config()
         # 注意证书路径
         config.certfile = "/etc/mycert/cert.pem"
         config.keyfile = "/path/mycert/key.pem"
-        config.bind = ["0.0.0.0:5080"]  # 设置绑定地址和端口号
-        config.protocol = "h2"  # 启用HTTP2
-        asyncio.run(serve(app, config))  # 启动应用程序
+        # 设置绑定地址和端口号
+        config.bind = ["0.0.0.0:5080"]
+        # 启用HTTP2
+        config.protocol = "h2"
+        # 启动应用程序
+        asyncio.run(serve(app, config))
 ### Gunicorn(WSGI服务器)
     gunicorn -w 4 -b 127.0.0.1:5000 app_name:app
 ### Daphne(基于Twisted的ASGI服务器)
