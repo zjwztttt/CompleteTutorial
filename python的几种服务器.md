@@ -22,10 +22,17 @@
             load_dotenv=False,#False OR True
         )
 #### Fastapi + Uvicorn(基于sans-io hyper、h11、h2和wsproto库的ASGI服务器)
-    from fastapi import FastAPI
+    from fastapi import FastAPI, Request
+    from fastapi.responses import HTMLResponse
+    from fastapi.templating import Jinja2Templates
     import uvicorn
     
     app = FastAPI()
+    templates = Jinja2Templates(directory="templates")
+    
+    @app.get("/", response_class=HTMLResponse)
+    async def read_item(request: Request):
+        return templates.TemplateResponse("index.html", {"request": request})
     
     if __name__ == "__main__":
         uvicorn.run(
