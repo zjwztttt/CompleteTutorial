@@ -49,6 +49,7 @@
             app,
             host='192.168.31.28',
             port=8080,
+            http="h11"
         )
 ### Hypercorn(基于asyncio的ASGI服务器)
     from fastapi import FastAPI, Request
