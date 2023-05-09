@@ -9,7 +9,7 @@
     def index():
         return render_template('index.html')
     
-    # 定义其他路由
+    # 定义其他路由，请求方式为`POST`,也可以改成`GET`
     @app.route('/save_url', methods=['POST'])
     def save_url():
         return "Hello,world!"
@@ -38,6 +38,11 @@
     async def read_item(request: Request):
         # 返回 HTML 模板
         return templates.TemplateResponse("index.html", {"request": request})
+    
+    # 定义其他路由，请求方式`post`，也可以改成`get`
+    @app.post('/other')
+    async def chatbot(request: Request):
+        return "Hello,world!"
     
     if __name__ == "__main__":
         # 启动应用程序
