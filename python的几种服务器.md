@@ -7,6 +7,10 @@
     @app.route('/')
     def index():
         return render_template('index.html')
+    # 定义其他路由
+    @app.route('/save_url', methods=['POST'])
+    def save_url():
+        return "Hello,world!"
     
     if __name__ == '__main__':
         app.run(
