@@ -71,7 +71,7 @@
         # 返回 HTML 模板
         return templates.TemplateResponse("index.html", {"request": request})
     
-    # post路由
+    # 定义其他路由，请求方式`post`，也可以改成`get`
     @app.post('/POST/GPT_API')
     async def chatbot():
         return "Hello,world!"
