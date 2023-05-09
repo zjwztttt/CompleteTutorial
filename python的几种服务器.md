@@ -70,6 +70,11 @@
     async def read_item(request: Request):
         # 返回 HTML 模板
         return templates.TemplateResponse("index.html", {"request": request})
+    
+    # post路由
+    @app.post('/POST/GPT_API')
+    async def chatbot():
+        return "Hello,world!"
 
     if __name__ == "__main__":
         # 创建 Hypercorn 配置实例
