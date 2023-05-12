@@ -127,7 +127,7 @@
 ### 例3
     <script type="module">
         // 导入WebAssembly模块并从中导入greet函数
-	import init, {sum} from "./templates/pkg/hello_wasm.js";
+        import init, {sum} from "./templates/pkg/hello_wasm.js";
 	// 初始化WebAssembly模块并调用greet函数
 	init().then(() => {
 	    // 将"a"和"b"传递给WebAssembly模块并将返回的结果赋值给"result"变量
