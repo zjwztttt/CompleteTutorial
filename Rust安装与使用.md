@@ -110,30 +110,34 @@
         </body>
     </html>
 #### 例2
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8">
-            <title>hello-wasm example</title>
-        </head>
-        <body>
-		    <script type="module">
-			    // 导入WebAssembly模块并从中导入greet函数
-			    import init, {greet} from "./templates/pkg/hello_wasm.js";
-			
-			    fetch('https://api.ipify.org?format=json')
-				    .then(response => response.json())
-				    .then(data => {
-					    const ip = data.ip;
-					    // 初始化WebAssembly模块并调用greet函数
-					    init().then(() => {
-						    // 将IP地址传递给WebAssembly模块
-						    greet(ip);
-					    });
-				    });
-		    </script>
-        </body>
-    </html>
+    <script type="module">
+        // 导入WebAssembly模块并从中导入greet函数
+	import init, {greet} from "./templates/pkg/hello_wasm.js";		
+	fetch('https://api.ipify.org?format=json')
+	    .then(response => response.json())
+	    .then(data => {
+	        const ip = data.ip;
+		// 初始化WebAssembly模块并调用greet函数
+		init().then(() => {
+		    // 将IP地址传递给WebAssembly模块
+		    greet(ip);
+                });
+            });
+    </script>
+### 例3
+    <script type="module">
+        // 导入WebAssembly模块并从中导入greet函数
+	import init, {sum} from "./templates/pkg/hello_wasm.js";
+	// 初始化WebAssembly模块并调用greet函数
+	init().then(() => {
+	    // 将"a"和"b"传递给WebAssembly模块并将返回的结果赋值给"result"变量
+	    var result = sum(5735, 7312);
+	    //将"结果写入页面"
+	    document.write("wasm sum 5735 +7312  = " + result)
+	    //将结果打印在调试日志中
+	    console.log(result);
+	});
+    </script>
 
 ### 以上代码可以用以下命令运行
     python3 -m http.server
