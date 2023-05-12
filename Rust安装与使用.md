@@ -55,6 +55,17 @@
     extern crate wasm_bindgen;
     // 从wasm_bindgen库中导入prelude模块
     use wasm_bindgen::prelude::*;
+
+    // 声明一个名为sum的导出函数
+    #[wasm_bindgen]
+    pub fn sum(a: i32, b: i32) -> i32 {
+        return a + b;
+    }
+#### 例子2
+    // 导入wasm_bindgen库
+    extern crate wasm_bindgen;
+    // 从wasm_bindgen库中导入prelude模块
+    use wasm_bindgen::prelude::*;
     
     // 声明一个名为alert的外部函数
     #[wasm_bindgen]
@@ -68,7 +79,7 @@
         // 调用alert函数并显示一条消息
         alert(&format!("Hello, {}!", name));
     }
-### 例子2
+#### 例子3
     // 导入wasm_bindgen库
     extern crate wasm_bindgen;
     // 从wasm_bindgen库中导入prelude模块
@@ -87,7 +98,7 @@
         // 调用console_log函数并显示一条消息
         log(&format!("Hello, {}!", name));
     }
-### 例子3
+#### 例子4
 
 ### 前端加载WebAssembly模块的几个小栗子
 #### 例1
@@ -124,7 +135,7 @@
                 });
             });
     </script>
-### 例3
+#### 例3
     <script type="module">
         // 导入WebAssembly模块并从中导入greet函数
         import init, {sum} from "./templates/pkg/hello_wasm.js";
