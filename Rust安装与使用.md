@@ -112,15 +112,15 @@
 #### 例2
     <script type="module">
         // 导入WebAssembly模块并从中导入greet函数
-	import init, {greet} from "./templates/pkg/hello_wasm.js";		
-	fetch('https://api.ipify.org?format=json')
-	    .then(response => response.json())
-	    .then(data => {
-	        const ip = data.ip;
-		// 初始化WebAssembly模块并调用greet函数
-		init().then(() => {
-		    // 将IP地址传递给WebAssembly模块
-		    greet(ip);
+        import init, {greet} from "./templates/pkg/hello_wasm.js";
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                const ip = data.ip;
+                // 初始化WebAssembly模块并调用greet函数
+                init().then(() => {
+                    // 将IP地址传递给WebAssembly模块
+                    greet(ip);
                 });
             });
     </script>
