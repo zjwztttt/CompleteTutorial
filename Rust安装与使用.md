@@ -26,29 +26,33 @@
     cargo build --release
 
 ## 六、静态编译
-1. 在`config.toml`配置文件中黏贴以下内容
+##### 在`config.toml`配置文件中黏贴以下内容
     [target.x86_64-pc-windows-msvc]
     rustflags = ["-C", "target-feature=+crt-static"]
 ##### 编译程序
     cargo build --release --target=x86_64-pc-windows-msvc
 
-## 六、Windows交叉编译(更多交叉编译工具链库请[参阅](https://doc.rust-lang.org/nightly/rustc/platform-support.html))
-1. 编译Linux可执行程序
+## 七、Windows交叉编译(更多交叉编译工具链库请[参阅](https://doc.rust-lang.org/nightly/rustc/platform-support.html))
+#### 1. 编译Linux可执行程序
 ##### 添加`target`
     rustup target add x86_64-unknown-linux-musl
-##### 在项目根目录新建`.Cargo`文件夹并在文件夹中新建`config.toml`文件，黏贴以下内容到`config.toml`文件中
+##### 在项目根目录新建`.Cargo`文件夹并在文件夹中新建`config.toml`文件，黏贴以下内容到新建的`config.toml`文件中
     [target.x86_64-unknown-linux-musl]
     linker = "rust-lld"
     rustflags = ["-C", "linker-flavor=ld.lld"]
 ##### 编译程序
     cargo build --release --target=x86_64-unknown-linux-musl
-## 七、查看所有支持的`target`和已经安装的`target`
+
+## 八、查看所有支持的`target`和已经安装的`target`
     rustup target list
-## 八、更新`Rust`环境
+
+## 九、更新`Rust`环境
     rustup update
-## 九、卸载Rust环境
+
+## 十、卸载Rust环境
     rustup self uninstall
-## 十、编译`WebAssembly`
+
+## 十一、编译`WebAssembly`
 #### 安装`wasm-pack`包(windows请获取[安装文件](https://rustwasm.github.io/wasm-pack/installer/))
     cargo install wasm-pack
 #### 添加目标 wasm32-unknown-unknown(请参阅[此文档](https://doc.rust-lang.org/nightly/rustc/platform-support.html)中的Tier2部分)
@@ -57,12 +61,14 @@
     cargo new --lib hello-wasm
 #### 构建`wasm`包
     wasm-pack build --target web
-## 十一、验证版本
+
+## 十二、验证版本
     rustup -V
     rustc -V
     cargo -V
     wasm-pack -V
-## 十二、几个`WebAssembly`模块的栗子
+
+## 十三、几个`WebAssembly`模块的栗子
 #### 例子1
     // 导入wasm_bindgen库
     extern crate wasm_bindgen;
