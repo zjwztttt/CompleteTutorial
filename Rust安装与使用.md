@@ -10,6 +10,7 @@
 1. 用`rustup-init.exe`安装`mingw`(此方法只有在安装Rust开发环境时有效，已经安装完的无效)
 - 在安装`rust`开发环境时选择2，在需要输入`host triple`时输入以下命令
     
+    
     x86_64-pc-windows-gnu
     
 - 安装完成后运行以下命令
