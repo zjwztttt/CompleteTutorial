@@ -11,6 +11,7 @@
 - 在安装`rust`开发环境时选择2，在需要输入`host triple`时输入以下命令
     
     x86_64-pc-windows-gnu
+    
 - 安装完成后运行以下命令
     
     `rustup toolchain install stable`
