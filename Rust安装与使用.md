@@ -35,12 +35,15 @@
 ## 六、Windows交叉编译(更多交叉编译工具链库请[参阅](https://doc.rust-lang.org/nightly/rustc/platform-support.html))
 #### 1. 编译Linux可执行程序
 > 添加`target`
+
     rustup target add x86_64-unknown-linux-musl
 > 在项目根目录新建`.Cargo`文件夹并在文件夹中新建`config.toml`文件，黏贴以下内容到新建的`config.toml`文件中
+
     [target.x86_64-unknown-linux-musl]
     linker = "rust-lld"
     rustflags = ["-C", "linker-flavor=ld.lld"]
 > 编译程序
+
     cargo build --release --target=x86_64-unknown-linux-musl
 
 ## 七、查看所有支持的`target`和已经安装的`target`
