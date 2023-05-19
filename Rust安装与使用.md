@@ -10,11 +10,11 @@
 #### 1.用`rustup-init.exe`安装`mingw`(此方法只有在安装Rust开发环境时有效，已经安装完的无效)
 ##### 在安装`rust`开发环境时选择2，在需要输入`host triple`时输入以下命令
     x86_64-pc-windows-gnu
-##### `安装完成后运行以下命令`
+##### 安装完成后运行以下命令
     rustup toolchain install stable
-#### `2.单独安装`mingw`(此方法是针对已经安装完Rust开发环境后想将交叉编译链库切换为`mingw`时)`
+#### 2.单独安装`mingw`(此方法是针对已经安装完Rust开发环境后想将交叉编译链库切换为`mingw`时)
     rustup toolchain install stable-x86_64-pc-windows-gnu
-##### `修改依赖为`mingw``
+##### 修改依赖为`mingw`
     rustup default stable-x86_64-pc-windows-gnu
 
 ## 五、Windows交叉编译(更多交叉编译工具链库请[参阅](https://doc.rust-lang.org/nightly/rustc/platform-support.html))
