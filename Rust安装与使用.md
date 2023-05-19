@@ -71,7 +71,10 @@
     wasm-pack build --target web
     
 ## 十一、编译`DLL`库
-#### 
+#### 在`config.toml`配置文件中黏贴以下内容
+    [lib]
+    name = "TestDLL" #生成dll的文件名
+    crate-type = ["cdylib"]
 
 ## 十二、验证版本
     rustup -V
@@ -182,4 +185,11 @@
 
 ### 以上代码可以用以下命令运行
     python3 -m http.server
+    
+## 十四、几个DLL库的栗子
+#### 例1
+    #[no_mangle]
+    pub extern fn hello() {
+        println!("hello Rust DLL!");
+    }
 
