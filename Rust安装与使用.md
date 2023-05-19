@@ -1,14 +1,16 @@
-### 一、Rust简介
-#### Rust 是 Mozilla 公司的一款编程语言，最早的版本在2010年由 Mozilla 公司的 Graydon Hoare 开发并推出。该语言被设计用于大规模并行、多线程的网络应用程序的开发，为的是提高系统的可扩展性、安全性和速度。 Rust 语言是一种支持将变量指针引用进行多重使用，不同于通过分配和释放存储空间来传递值的传统功能语言。 Rust 是一种系统级别的语言，具有高度的安全和性能，并且内存安全和并发性能也是其优点
+## 一、准备工作：
+### 指定`rustc`和`cargo`环境安装目录(添加系统环境变量)
+    RUSTUP_HOME = E:\Rust\rustup
+    CARGO_HOME = `E:\Rust\cargo
 
-### 二、Rust安装(Windows篇)
-#### 我们在安装Rust开发环境时并不希望它安装在我们的`C`盘中破坏我们`C`盘稳定的系统环境，所以我们希望将环境搭建在其他空闲磁盘下,比如在`E`盘下新建一个名称为`Rust`的文件夹专门用来存放Rust安装的所有环境，以下所有操作都是基于此文件夹展开的
-##### 1.新建一个名为`rustup`的文件夹，并将此`E:\Rust\rustup`路径添加到环境变量`RUSTUP_HOME`中
-##### 2.新建一个名为`cargo`的文件夹，并将此`E:\Rust\cargo`路径添加到环境变量`CARGO_HOME`中
-##### 3.Rust开发环境的安装请看[此教程](https://blog.csdn.net/cnds123/article/details/105770367)
+## 二、安装Rust开发环境
+##### Rust开发环境的安装请看[此教程](https://blog.csdn.net/cnds123/article/details/105770367)
 
-### 三、为Rust切换交叉编译工具链(更多交叉编译工具链库请[参阅](https://doc.rust-lang.org/nightly/rustc/platform-support.html))
-#### 1.用`rustup-init.exe`安装`mingw`(此方法只有在安装Rust开发环境时有效，已经安装完的无效)
+##### Rust开发环境依赖`MSVC`切换为`Mingw`
+    rustup toolchain install stable-x86_64-pc-windows-gnu
+
+## 四、Windows交叉编译(更多交叉编译工具链库请[参阅](https://doc.rust-lang.org/nightly/rustc/platform-support.html))
+##### 1.用`rustup-init.exe`安装`mingw`(此方法只有在安装Rust开发环境时有效，已经安装完的无效)
 ##### 在安装`rust`开发环境时选择2，在需要输入`host triple`时输入以下命令
     x86_64-pc-windows-gnu
 ##### 安装完成后运行以下命令
