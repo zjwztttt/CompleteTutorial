@@ -13,7 +13,6 @@
 - 安装完成后运行以下命令
     rustup toolchain install stable
 2. 单独安装`mingw`(此方法是针对已经安装完Rust开发环境后想将依赖切换为`mingw`时)
-
     rustup toolchain install stable-x86_64-pc-windows-gnu
 - 修改依赖为`mingw`
     rustup default stable-x86_64-pc-windows-gnu
