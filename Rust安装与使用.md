@@ -25,11 +25,11 @@
 ## 五、编译程序
     cargo build --release
 ## 六、Windows交叉编译(更多交叉编译工具链库请[参阅](https://doc.rust-lang.org/nightly/rustc/platform-support.html))
-### 七、更新`Rust`环境
+## 七、更新`Rust`环境
     rustup update
-### 六、卸载Rust环境
+## 八、卸载Rust环境
     rustup self uninstall
-### 七、编译`WebAssembly`
+## 九、编译`WebAssembly`
 #### 安装`wasm-pack`包(windows请获取[安装文件](https://rustwasm.github.io/wasm-pack/installer/))
     cargo install wasm-pack
 #### 添加目标 wasm32-unknown-unknown(请参阅[此文档](https://doc.rust-lang.org/nightly/rustc/platform-support.html)中的Tier2部分)
@@ -38,12 +38,12 @@
     cargo new --lib hello-wasm
 #### 构建`wasm`包
     wasm-pack build --target web
-### 八、验证版本
+## 十、验证版本
     rustup -V
     rustc -V
     cargo -V
     wasm-pack -V
-### 九、几个`WebAssembly`模块的栗子
+## 十一、几个`WebAssembly`模块的栗子
 #### 例子1
     // 导入wasm_bindgen库
     extern crate wasm_bindgen;
