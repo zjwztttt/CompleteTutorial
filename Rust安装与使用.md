@@ -32,6 +32,8 @@
     [target.x86_64-unknown-linux-musl]
     linker = "rust-lld"
     rustflags = ["-C", "linker-flavor=ld.lld"]
+##### 编译程序
+    cargo build --release --target=x86_64-unknown-linux-musl
 ## 七、查看所有支持的`target`和已经安装的`target`
     rustup target list
 ## 八、更新`Rust`环境
