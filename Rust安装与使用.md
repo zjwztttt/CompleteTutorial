@@ -3,10 +3,10 @@
     RUSTUP_HOME = E:\Rust\rustup
     CARGO_HOME = `E:\Rust\cargo
 
-## 三、安装Rust开发环境
+## 二、安装Rust开发环境
 ##### Rust开发环境的安装请看[此教程](https://blog.csdn.net/cnds123/article/details/105770367)
 
-## 四、Rust开发环境依赖`MSVC`切换为`Mingw`
+## 三、Rust开发环境依赖`MSVC`切换为`Mingw`
 1. 用`rustup-init.exe`安装`mingw`(此方法只有在安装Rust开发环境时有效，已经安装完的无效)
 - 在安装`rust`开发环境时选择2，在需要输入`host triple`时输入以下命令   
     
@@ -22,17 +22,17 @@
     
     `rustup default stable-x86_64-pc-windows-gnu`
 
-## 五、编译程序
+## 四、编译程序
     cargo build --release
 
-## 六、静态编译
+## 五、静态编译
 ##### 在`config.toml`配置文件中黏贴以下内容
     [target.x86_64-pc-windows-msvc]
     rustflags = ["-C", "target-feature=+crt-static"]
 ##### 编译程序
     cargo build --release --target=x86_64-pc-windows-msvc
 
-## 七、Windows交叉编译(更多交叉编译工具链库请[参阅](https://doc.rust-lang.org/nightly/rustc/platform-support.html))
+## 六、Windows交叉编译(更多交叉编译工具链库请[参阅](https://doc.rust-lang.org/nightly/rustc/platform-support.html))
 #### 1. 编译Linux可执行程序
 ##### 添加`target`
     rustup target add x86_64-unknown-linux-musl
@@ -43,16 +43,16 @@
 ##### 编译程序
     cargo build --release --target=x86_64-unknown-linux-musl
 
-## 八、查看所有支持的`target`和已经安装的`target`
+## 七、查看所有支持的`target`和已经安装的`target`
     rustup target list
 
-## 九、更新`Rust`环境
+## 八、更新`Rust`环境
     rustup update
 
-## 十、卸载Rust环境
+## 九、卸载Rust环境
     rustup self uninstall
 
-## 十一、编译`WebAssembly`
+## 十、编译`WebAssembly`
 #### 安装`wasm-pack`包(windows请获取[安装文件](https://rustwasm.github.io/wasm-pack/installer/))
     cargo install wasm-pack
 #### 添加目标 wasm32-unknown-unknown(请参阅[此文档](https://doc.rust-lang.org/nightly/rustc/platform-support.html)中的Tier2部分)
@@ -62,13 +62,13 @@
 #### 构建`wasm`包
     wasm-pack build --target web
 
-## 十二、验证版本
+## 十一、验证版本
     rustup -V
     rustc -V
     cargo -V
     wasm-pack -V
 
-## 十三、几个`WebAssembly`模块的栗子
+## 十二、几个`WebAssembly`模块的栗子
 #### 例子1
     // 导入wasm_bindgen库
     extern crate wasm_bindgen;
