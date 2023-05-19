@@ -24,6 +24,14 @@
 
 ## 五、编译程序
     cargo build --release
+
+## 六、静态编译
+1. 在`config.toml`配置文件中黏贴以下内容
+    [target.x86_64-pc-windows-msvc]
+    rustflags = ["-C", "target-feature=+crt-static"]
+##### 编译程序
+    cargo build --release --target=x86_64-pc-windows-msvc
+
 ## 六、Windows交叉编译(更多交叉编译工具链库请[参阅](https://doc.rust-lang.org/nightly/rustc/platform-support.html))
 1. 编译Linux可执行程序
 ##### 添加`target`
