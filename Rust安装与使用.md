@@ -70,7 +70,7 @@
 #### 构建`wasm`包
     wasm-pack build --target web
     
-## 十一、编译`DLL`库
+## 十一、编译`DLL`库(详细教程请[参考](https://mp.weixin.qq.com/s/XUpjfPye_C56GJQp3YdMzA))
 #### 在`config.toml`配置文件中黏贴以下内容
     [lib]
     name = "TestDLL" #生成dll的文件名
@@ -192,4 +192,16 @@
     pub extern fn hello() {
         println!("hello Rust DLL!");
     }
+### `C#`读取DLL库的几个小栗子
+#### 例1
+    class Program
+    {
+        [DllImport("TestDLL.dll", EntryPoint = "hello", CallingConvention = CallingConvention.Cdecl)]
+        public static extern void hello();
 
+        static void Main(string[] args)
+        {
+            hello();
+            Console.ReadLine();
+        }
+    }
