@@ -23,20 +23,9 @@
     `rustup default stable-x86_64-pc-windows-gnu`
 
 ## 五、编译程序
-#### 1. 使用`cargo build`打包项目(在命令行中进入你的项目目录)
     cargo build --release
-#### 2. 使用`cargo-bundle`打包项目
-##### 安装cargo-bundle
-    cargo install cargo-bundle
-##### 在`cargo.toml`文件中的`[package]`块下添加以下信息(需要将引号中的内容改成你的项目目录)
-    description = "Your package description"
-##### 在`Cargo.toml`文件中添加以下块
-    [package.metadata.bundle]
-- 这一部分描述了生成的包的各种属性，例如名称、图标、描述、版权以及任何生成额外数据所需的打包脚本。完整的清单格式可以查阅`cargo-bundle`的[GitHub页面](https://github.com/burtonageo/cargo-bundle)
-##### 使用以下命令打包一个发布版本
-    cargo bundle --release
 ## 六、Windows交叉编译(更多交叉编译工具链库请[参阅](https://doc.rust-lang.org/nightly/rustc/platform-support.html))
-### 五、更新`Rust`环境
+### 七、更新`Rust`环境
     rustup update
 ### 六、卸载Rust环境
     rustup self uninstall
