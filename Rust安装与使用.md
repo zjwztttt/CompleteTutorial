@@ -78,13 +78,22 @@
 #### 编译`x86`架构的`DLL`库
     cargo build --release --target i686-pc-windows-msvc
 
-## 十二、验证版本
+## 十二、编译`python module`(详细教程请[参考](https://mp.weixin.qq.com/s/X6fZiCuxAGxV0TC4o75yDw))
+#### 在`config.toml`配置文件中黏贴以下配置
+    [lib]
+    name = "python_rust"
+    crate-type = ["cdylib"]
+    
+    [dependencies]
+    pyo3 = "0.18.3"
+
+## 十三、验证版本
     rustup -V
     rustc -V
     cargo -V
     wasm-pack -V
 
-## 十三、几个`WebAssembly`模块的栗子
+## 十四、几个`WebAssembly`模块的栗子
 #### 例子1
     // 导入wasm_bindgen库
     extern crate wasm_bindgen;
@@ -188,7 +197,7 @@
 ### 以上代码可以用以下命令运行
     python3 -m http.server
     
-## 十四、几个DLL库的栗子
+## 十五、几个DLL库的栗子
 #### 例1
     #[no_mangle]
     pub extern fn hello() {
