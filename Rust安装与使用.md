@@ -307,3 +307,20 @@
         module.add_class::<Dog>()?;
         Ok(())
     }
+    
+### python使用模块的几个栗子
+#### 例1
+    import python_rust
+
+    sum = python_rust.sum(5, 6)
+    print(sum)
+#### 例2
+    import python_rust2
+
+    sort = python_rust2.sort([2, 3, 7, 4, 5, 0, 2, 1])
+    print(sort)
+#### 例3
+    import python_rust2
+
+    dog = python_rust2.Dog(id = 1, name = "Shirley")
+    dog.run()
