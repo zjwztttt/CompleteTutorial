@@ -307,6 +307,11 @@
         module.add_class::<Dog>()?;
         Ok(())
     }
+#### 以上例子需要用`python`环境和`pip`工具安装`maturin`库
+    pip3 install maturin
+    
+#### 使用`maturin`编译以上Rust例子为`python module`
+    maturin build
     
 ### python使用模块的几个栗子
 #### 例1
