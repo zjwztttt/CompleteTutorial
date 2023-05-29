@@ -13,7 +13,7 @@
     wsl --unregister Ubuntu-20.04
 ### 7. 重新导入并安装WSL到`d:\wsl\ubuntu20.04`目录
     wsl --import Ubuntu-20.04 d:\wsl\ubuntu20.04 d:\wsl-ubuntu20.04.tar --version 2
-### 8. 设置默认登录用户(`Username`为安装子系统分发版本时的用户名)
-    ubuntu2004 config --default-user Username
+### 8. 设置默认登录用户为`root`
+    Debian config --default-user root
 ### 9. 删除`tar`文件
     del d:\wsl-ubuntu20.04.tar
