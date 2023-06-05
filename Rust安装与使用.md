@@ -50,7 +50,7 @@
     rustup target list
 
 ## 八、更新`Rust`环境
-    rustup update
+    rustup update stable
 
 ## 九、卸载Rust环境
     rustup self uninstall
