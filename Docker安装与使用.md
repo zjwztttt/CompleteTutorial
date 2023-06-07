@@ -191,6 +191,8 @@
     https://docker.mirrors.ustc.edu.cn/
 #### 网易：
     https://hub-mirror.c.163.com/
+#### 阿里云：
+    https://almtd3fa.mirror.aliyuncs.com
 #### 七牛云加速器：
     https://reg-mirror.qiniu.com
 ### 2. 配置`Docker`加速器
