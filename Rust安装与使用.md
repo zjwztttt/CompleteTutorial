@@ -34,9 +34,6 @@
 ### [《Linux环境编译Windows可执行程序》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Linux%E7%8E%AF%E5%A2%83%E4%B8%8BRust%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91Windows%E7%A8%8B%E5%BA%8F.md)
 ### [《Windows环境编译Linux可执行程序》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Windows%E7%8E%AF%E5%A2%83%E4%B8%8BRust%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91Linux%E7%A8%8B%E5%BA%8F.md)
 
-## 七、查看所有支持的`target`和已经安装的`target`
-    rustup target list
-
 ## 八、查看支持的CPU架构和OS系统(更多交叉编译工具链库请[参阅](https://doc.rust-lang.org/nightly/rustc/platform-support.html))
     rustc --print target-list | pr -tw100 --columns 3
 
