@@ -23,18 +23,17 @@
     
     rustup default stable-x86_64-pc-windows-gnu
 
-## 四、编译程序
-    cargo build --release
-
-## 五、交叉编译
-### [《Linux环境编译Windows可执行程序》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Linux%E7%8E%AF%E5%A2%83%E4%B8%8BRust%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91Windows%E7%A8%8B%E5%BA%8F.md)
-### [《Windows环境编译Linux可执行程序》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Windows%E7%8E%AF%E5%A2%83%E4%B8%8BRust%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91Linux%E7%A8%8B%E5%BA%8F.md)
-## 六、静态编译
+## 四、静态编译(编译好的`exe`程序在别的`Windows`电脑上无法使用时) 
 ##### 在`config.toml`配置文件中黏贴以下内容
     [target.x86_64-pc-windows-msvc]
     rustflags = ["-C", "target-feature=+crt-static"]
-##### 编译程序
+
+## 五、编译程序
     cargo build --release --target=x86_64-pc-windows-msvc
+
+## 六、交叉编译
+### [《Linux环境编译Windows可执行程序》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Linux%E7%8E%AF%E5%A2%83%E4%B8%8BRust%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91Windows%E7%A8%8B%E5%BA%8F.md)
+### [《Windows环境编译Linux可执行程序》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Windows%E7%8E%AF%E5%A2%83%E4%B8%8BRust%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91Linux%E7%A8%8B%E5%BA%8F.md)
 
 ## 七、查看所有支持的`target`和已经安装的`target`
     rustup target list
