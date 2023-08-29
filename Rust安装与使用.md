@@ -35,12 +35,10 @@
 ##### 编译程序
     cargo build --release --target=x86_64-pc-windows-msvc
 
-## 六、Windows交叉编译(更多交叉编译工具链库请[参阅](https://doc.rust-lang.org/nightly/rustc/platform-support.html))
-
 ## 七、查看所有支持的`target`和已经安装的`target`
     rustup target list
 
-## 八、查看支持的CPU架构和OS系统
+## 八、查看支持的CPU架构和OS系统(更多交叉编译工具链库请[参阅](https://doc.rust-lang.org/nightly/rustc/platform-support.html))
     rustc --print target-list | pr -tw100 --columns 3
 
 ## 九、更新`Rust`环境
