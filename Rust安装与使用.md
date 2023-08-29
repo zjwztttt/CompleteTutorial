@@ -23,8 +23,7 @@
     
     rustup default stable-x86_64-pc-windows-gnu
 
-## 四、静态编译(编译好的`exe`程序在别的`Windows`电脑上无法使用时) 
-##### 在`config.toml`配置文件中黏贴以下内容
+## 四、静态编译(在项目根目录新建.Cargo文件夹并在文件夹中新建config.toml文件，黏贴以下内容到新建的config.toml文件中) 
     [target.x86_64-pc-windows-msvc]
     rustflags = ["-C", "target-feature=+crt-static"]
 
