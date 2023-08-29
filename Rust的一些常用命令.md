@@ -1,5 +1,9 @@
-##
-##
+## 更新`Rust`环境
+    rustup update stable
+
+## 卸载Rust环境
+    rustup self uninstall
+
 ##
 ## 查看所有支持的`target`和已经安装的`target`
     rustup target list
