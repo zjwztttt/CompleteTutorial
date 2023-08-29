@@ -37,12 +37,6 @@
 ## 七、其他
 ### [《Ruat的一些常用命令》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Rust%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
 
-## 九、更新`Rust`环境
-    rustup update stable
-
-## 十、卸载Rust环境
-    rustup self uninstall
-
 ## 十一、编译`WebAssembly`
 #### 安装`wasm-pack`包(windows请获取[安装文件](https://rustwasm.github.io/wasm-pack/installer/))
     cargo install wasm-pack
