@@ -4,7 +4,8 @@
     CARGO_HOME = `E:\Rust\cargo
 
 ## 二、安装Rust开发环境
-##### Rust开发环境的安装请看[此教程](https://blog.csdn.net/cnds123/article/details/105770367)
+### [《官方安装程序》](https://rustup.rs/)
+### [《第三方安装教程》](https://blog.csdn.net/cnds123/article/details/105770367)
 
 ## 三、Rust开发环境依赖`MSVC`切换为`Mingw`
 #### 1. 用`rustup-init.exe`安装`mingw`(此方法只有在安装Rust开发环境时有效，已经安装完的无效)
