@@ -5,3 +5,4 @@
     linker = "rust-lld"
     rustflags = ["-C", "linker-flavor=ld.lld"]
 ## 编译Rust源码为Linux可执行程序
+    cargo build --release --target=x86_64-unknown-linux-musl
