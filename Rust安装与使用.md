@@ -36,9 +36,6 @@
     cargo build --release --target=x86_64-pc-windows-msvc
 
 ## 六、Windows交叉编译(更多交叉编译工具链库请[参阅](https://doc.rust-lang.org/nightly/rustc/platform-support.html))
-> 编译程序
-
-    cargo build --release --target=x86_64-unknown-linux-musl
 
 ## 七、查看所有支持的`target`和已经安装的`target`
     rustup target list
