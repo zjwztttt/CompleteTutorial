@@ -49,13 +49,16 @@
 ## 七、查看所有支持的`target`和已经安装的`target`
     rustup target list
 
-## 八、更新`Rust`环境
+## 八、查看支持的CPU架构和OS系统
+    rustc --print target-list | pr -tw100 --columns 3
+
+## 九、更新`Rust`环境
     rustup update stable
 
-## 九、卸载Rust环境
+## 十、卸载Rust环境
     rustup self uninstall
 
-## 十、编译`WebAssembly`
+## 十一、编译`WebAssembly`
 #### 安装`wasm-pack`包(windows请获取[安装文件](https://rustwasm.github.io/wasm-pack/installer/))
     cargo install wasm-pack
 #### 添加`target`(更多`target`请参阅[此文档](https://doc.rust-lang.org/nightly/rustc/platform-support.html)中的Tier2部分)
@@ -70,7 +73,7 @@
 #### 构建`wasm`包
     wasm-pack build --target web
     
-## 十一、编译`DLL`库(详细教程请[参考](https://mp.weixin.qq.com/s/XUpjfPye_C56GJQp3YdMzA))
+## 十二、编译`DLL`库(详细教程请[参考](https://mp.weixin.qq.com/s/XUpjfPye_C56GJQp3YdMzA))
 #### 在`config.toml`配置文件中黏贴以下内容
     [lib]
     name = "TestDLL" #生成dll的文件名
@@ -78,7 +81,7 @@
 #### 编译`x86`架构的`DLL`库
     cargo build --release --target i686-pc-windows-msvc
 
-## 十二、编译`python module`(详细教程请[参考](https://mp.weixin.qq.com/s/X6fZiCuxAGxV0TC4o75yDw))
+## 十三、编译`python module`(详细教程请[参考](https://mp.weixin.qq.com/s/X6fZiCuxAGxV0TC4o75yDw))
 #### 在`config.toml`配置文件中黏贴以下配置
     [lib]
     name = "python_rust"
@@ -87,13 +90,13 @@
     [dependencies]
     pyo3 = "0.18.3"
 
-## 十三、验证版本
+## 十四、验证版本
     rustup -V
     rustc -V
     cargo -V
     wasm-pack -V
 
-## 十四、几个`WebAssembly`模块的栗子
+## 十五、几个`WebAssembly`模块的栗子
 #### 例子1
     // 导入wasm_bindgen库
     extern crate wasm_bindgen;
@@ -197,7 +200,7 @@
 ### 以上代码可以用以下命令运行
     python3 -m http.server
     
-## 十五、几个DLL库的栗子
+## 十六、几个DLL库的栗子
 #### 例1
     #[no_mangle]
     pub extern fn hello() {
@@ -217,7 +220,7 @@
         }
     }
 
-## 十六、几个`python module`的栗子
+## 十七、几个`python module`的栗子
 #### 例1
     use pyo3::prelude::*;
 
