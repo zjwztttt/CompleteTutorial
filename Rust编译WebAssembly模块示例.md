@@ -101,4 +101,5 @@
 ## 以上代码可以用以下命令运行
     python3 -m http.server
 
+## 返回[上一页](https://github.com/zjwztttt/CompleteTutorial/blob/main/Rust%E7%BC%96%E8%AF%91WebAssembly%E6%A8%A1%E5%9D%97.md)
 ## 返回[首页](https://github.com/zjwztttt/CompleteTutorial/blob/main/Rust%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8.md)
