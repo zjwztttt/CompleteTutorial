@@ -6,3 +6,5 @@
     rustflags = ["-C", "linker-flavor=ld.lld"]
 ## 编译Rust源码为Linux可执行程序
     cargo build --release --target=x86_64-unknown-linux-musl
+
+## 返回[首页](https://github.com/zjwztttt/CompleteTutorial/blob/main/Rust%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8.md)
