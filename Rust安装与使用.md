@@ -38,6 +38,7 @@
 ### [《Ruat的一些常用命令》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Rust%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
 ### [《Rust编译WebAssembly》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Rust%E7%BC%96%E8%AF%91WebAssembly%E6%A8%A1%E5%9D%97.md)
 ### [《Rust编译DLL库》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Rust%E7%BC%96%E8%AF%91DLL%E5%BA%93.md)(详细教程请[参考](https://mp.weixin.qq.com/s/XUpjfPye_C56GJQp3YdMzA))
+### [《Rust编译Python模块》]()(详细教程请[参考](https://mp.weixin.qq.com/s/X6fZiCuxAGxV0TC4o75yDw))
 
 ## 十七、几个`python module`的栗子
 #### 例1
