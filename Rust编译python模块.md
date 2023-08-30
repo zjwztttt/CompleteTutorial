@@ -13,4 +13,4 @@
     maturin build
 
 ## 其他
-### [《Rust编译Python模块示例》]()
+### [《Rust编译Python模块示例》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Rust%E7%BC%96%E8%AF%91python%E6%A8%A1%E5%9D%97%E7%A4%BA%E4%BE%8B.md)
