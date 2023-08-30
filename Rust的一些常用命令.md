@@ -1,10 +1,10 @@
 ## 更新`Rust`环境
     rustup update stable
 
-## 卸载Rust环境
+## 卸载`Rust`环境
     rustup self uninstall
 
-## 十四、验证版本
+## 验证版本
     rustup -V
     rustc -V
     cargo -V
