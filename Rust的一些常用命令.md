@@ -4,7 +4,12 @@
 ## 卸载Rust环境
     rustup self uninstall
 
-##
+## 十四、验证版本
+    rustup -V
+    rustc -V
+    cargo -V
+    wasm-pack -V
+
 ## 查看所有支持的`target`和已经安装的`target`
     rustup target list
 
