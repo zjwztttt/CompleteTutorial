@@ -36,21 +36,7 @@
 
 ## 七、其他
 ### [《Ruat的一些常用命令》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Rust%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
-
-## 十一、编译`WebAssembly`
-#### 安装`wasm-pack`包(windows请获取[安装文件](https://rustwasm.github.io/wasm-pack/installer/))
-    cargo install wasm-pack
-#### 添加`target`(更多`target`请参阅[此文档](https://doc.rust-lang.org/nightly/rustc/platform-support.html)中的Tier2部分)
-    rustup target add wasm32-unknown-unknown
-#### 新建一个`wasm`包(wasm代码可以看[这篇教程](https://developer.mozilla.org/zh-CN/docs/WebAssembly/Rust_to_wasm)或者[这篇教程](https://www.wkwkk.com/articles/1c90cd3673398f7f.html))
-    cargo new --lib hello-wasm
-#### 在`config.toml`文件中黏贴以下内容
-    [lib]
-    crate-type = ["cdylib"]
-#### 在`[dependencies]`块中添加以下配置项
-    wasm-bindgen = "0.2"
-#### 构建`wasm`包
-    wasm-pack build --target web
+### [《Rust编译WebAssembly》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Rust%E7%BC%96%E8%AF%91WebAssembly.md)
     
 ## 十二、编译`DLL`库(详细教程请[参考](https://mp.weixin.qq.com/s/XUpjfPye_C56GJQp3YdMzA))
 #### 在`config.toml`配置文件中黏贴以下内容
