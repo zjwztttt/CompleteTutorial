@@ -105,3 +105,5 @@
 
     dog = python_rust2.Dog(id = 1, name = "Shirley")
     dog.run()
+
+## 返回[上一页](https://github.com/zjwztttt/CompleteTutorial/blob/main/Rust%E7%BC%96%E8%AF%91python%E6%A8%A1%E5%9D%97.md)
