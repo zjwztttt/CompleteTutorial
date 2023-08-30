@@ -69,12 +69,6 @@
     [dependencies]
     pyo3 = "0.18.3"
 
-## 十四、验证版本
-    rustup -V
-    rustc -V
-    cargo -V
-    wasm-pack -V
-
 ## 十五、几个`WebAssembly`模块的栗子
 #### 例子1
     // 导入wasm_bindgen库
