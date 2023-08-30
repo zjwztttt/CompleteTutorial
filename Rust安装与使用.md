@@ -36,7 +36,7 @@
 
 ## 七、其他
 ### [《Ruat的一些常用命令》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Rust%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
-### [《Rust编译WebAssembly》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Rust%E7%BC%96%E8%AF%91WebAssembly.md)
+### [《Rust编译WebAssembly》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Rust%E7%BC%96%E8%AF%91WebAssembly%E6%A8%A1%E5%9D%97.md)
     
 ## 十二、编译`DLL`库(详细教程请[参考](https://mp.weixin.qq.com/s/XUpjfPye_C56GJQp3YdMzA))
 #### 在`config.toml`配置文件中黏贴以下内容
