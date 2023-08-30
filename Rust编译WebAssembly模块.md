@@ -11,3 +11,6 @@
     wasm-bindgen = "0.2"
 ## 构建`wasm`包
     wasm-pack build --target web
+
+## 其他
+### [WebAssembly模块示例]()
