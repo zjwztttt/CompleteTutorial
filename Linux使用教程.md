@@ -2,6 +2,15 @@
     service 服务名 start
     systemctl start 服务名
 ### 服务停止
+    service 服务名 stop
+    systemctl stop 服务名
+### 服务重启
+    service 服务名 restart
+    systemctl restart 服务名
+### 开机自启服务
+    systemctl enable 服务名
+### 查看服务运行日志
+    systemctl status 服务名
 ### 将文件夹压缩为`.tar.gz`(常用来打包项目)
     tar -czvf 压缩文件名.tar.gz 文件夹名称
 ### 解压`.tar.gz`格式的压缩文件
