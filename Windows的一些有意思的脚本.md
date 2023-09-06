@@ -8,6 +8,6 @@
     mshta vbscript:createobject("wscript.shell").run("""%~nx0"" h",0)(window.close)&&exit
     :begin
     REM
-    cd C:\frp
-    frps -c frps.ini
+    cd 程序所在路径
+    程序名称或启动命令
     exit
