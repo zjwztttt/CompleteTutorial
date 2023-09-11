@@ -5,3 +5,10 @@
     yum update -y && yum update -y && yum install -y socat
 ## 运行Acme脚本
     curl https://get.acme.sh | sh
+## 申请证书及密钥
+##### 【将代码中注释的邮箱和域名，改为你自己的】
+    ~/.acme.sh/acme.sh --register-account -m xxxx@gmail.com
+    ~/.acme.sh/acme.sh  --issue -d 输入你的域名  --standalone
+## 下载证书及密钥
+    ~/.acme.sh/acme.sh --installcert -d 输入你的域名 --key-file /root/private.key --fullchain-file /root/cert.crt
+# 申请`.pem`格式的证书
