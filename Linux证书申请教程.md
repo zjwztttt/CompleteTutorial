@@ -12,3 +12,7 @@
 ## 下载证书及密钥
     ~/.acme.sh/acme.sh --installcert -d 输入你的域名 --key-file /root/private.key --fullchain-file /root/cert.crt
 # 申请`.pem`格式的证书
+## 安装OpenSSL
+    apt update -y && apt full-upgrade && apt install -y openssl
+## 申请证书
+    openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365
