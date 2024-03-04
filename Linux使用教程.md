@@ -27,3 +27,11 @@
     kill -9 60120
 ### 以PID文件关闭进程
     kill $(cat /var/run/hypercorn.pid)
+### 安装GCC编译器
+    apt install build-essential
+### 查看GCC编译器版本
+    gcc --version
+### 查看G++编译器版本
+    g++ --version
+### 安装CMake编译器
+    apt install cmake
