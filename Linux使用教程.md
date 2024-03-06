@@ -27,6 +27,8 @@
     kill -9 60120
 ### 以PID文件关闭进程
     kill $(cat /var/run/hypercorn.pid)
+### 以程序包名称关闭进程
+    pkill -SIGTERM 包名称
 ### 安装GCC编译器
     apt install build-essential
 ### 查看GCC编译器版本
