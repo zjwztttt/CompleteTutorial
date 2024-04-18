@@ -1,5 +1,7 @@
 ### 复制文件到指定目录
     cp 文件名 目标目录
+### 查看程序的安装目录
+    whereis 程序名称
 ### 服务启动
     service 服务名 start
     systemctl start 服务名
