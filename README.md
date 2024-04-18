@@ -9,4 +9,4 @@
 #### 7.[python的几种服务器](https://github.com/zjwztttt/CompleteTutorial/blob/main/python%E7%9A%84%E5%87%A0%E7%A7%8D%E6%9C%8D%E5%8A%A1%E5%99%A8.md)
 #### 8.[Windows一些命令的用法](https://github.com/zjwztttt/CompleteTutorial/blob/main/Windows%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4%E7%9A%84%E7%94%A8%E6%B3%95.md)
 #### 9.[Windows中一些有意思的脚本](https://github.com/zjwztttt/CompleteTutorial/blob/main/Windows%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E8%84%9A%E6%9C%AC.md)
-#### 10.[Termux使用教程]()
+#### 10.[Termux使用教程](Termux使用教程.md)
