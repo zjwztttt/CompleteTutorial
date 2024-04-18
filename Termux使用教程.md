@@ -41,7 +41,23 @@
     pkg install openssh
 #### 启动OpenSSH
     sshd
+#### 查看Termux的用户名
+    whoami
 #### 其他设备连接OpenSSH
     ssh Termux的用户名 @ Termux的IP地址 -p 8022
 #### 其他设备退出OpenSSH连接
+    exit
+### 2.切换Root用户
+### 没有获取Root权限的手机
+#### 安装proot工具
+    pkg install proot
+#### 模拟Root用户
+    termux-chroot
+### 已经获取Root权限的手机
+#### 安装tsu工具
+    pkg install tsu
+#### 切换为Root用户
+    tsu
+#### 手机会弹出请求Root授权的窗口，通过授权即可！
+#### 退出Root用户
     exit
