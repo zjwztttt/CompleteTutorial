@@ -61,3 +61,7 @@
 #### 手机会弹出请求Root授权的窗口，通过授权即可！
 #### 退出Root用户
     exit
+## 解决Android12以上的系统强杀Termux后台的问题
+#### 在Termux分屏显示下进入手机的开发者选项中并打开
+#### 在Termux窗口中输入以下命令
+    apt update && apt upgrade -y && apt install git -y && git clone https://github.com/SaicharanKandukuri/termux-android12-phantom-fixcd termux-android12-phantom-fix && bash runme.sh
