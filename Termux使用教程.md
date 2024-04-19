@@ -65,7 +65,12 @@
 #### 在Termux分屏显示下进入手机的开发者选项中并打开无线调试并记下端口号
 #### 点击使用配对码配对设备并在弹出的菜单中记下配对码与这个IP地址与端口号
 #### 在Termux窗口中输入以下命令
-    apt update && apt upgrade -y && apt install git -y && git clone https://github.com/SaicharanKandukuri/termux-android12-phantom-fixcd termux-android12-phantom-fix && bash runme.sh
+    apt update
+    apt upgrade -y
+    apt install git -y
+    git clone https://github.com/SaicharanKandukuri/termux-android12-phantom-fix
+    cd termux-android12-phantom-fix
+    bash runme.sh
 #### 输入配对码弹出菜单里的端口号
 #### 输入配对码
 #### 输入无线调试界面中的端口号
