@@ -26,9 +26,7 @@
     termux-setup-storage
 ### 14.查看本机IP地址
     ifconfig
-### 15.列出可以安装的Linux操作系统
-    pkg install proot-distro && proot-distro list
-### 16.切换termux内置软件源
+### 15.切换termux内置软件源
     termux-change-repo
 ## 源文件
 #### 1.清华大学的源文件
@@ -65,6 +63,14 @@
 #### 手机会弹出请求Root授权的窗口，通过授权即可！
 #### 退出Root用户
     exit
+### 3.Termux安装Linux系统
+#### 安装`proot-distro`库
+    pkg install proot-distro
+#### 列出可供安装的Linux系统
+    proot-distro list
+#### 安装Linux系统
+    proot-distro install Linux系统名称
+
 ## 解决Android12以上的系统强杀Termux后台的问题
 #### 在Termux分屏显示下进入手机的开发者选项中并打开无线调试并记下端口号
 #### 点击使用配对码配对设备并在弹出的菜单中记下配对码与这个IP地址与端口号
