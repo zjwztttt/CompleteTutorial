@@ -26,6 +26,10 @@
     termux-setup-storage
 ### 14.查看本机IP地址
     ifconfig
+### 15.列出可以安装的Linux操作系统
+    pkg install proot-distro && proot-distro list
+### 16.切换termux内置软件源
+    termux-change-repo
 ## 源文件
 #### 1.清华大学的源文件
     tsinghua.sources
