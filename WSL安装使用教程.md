@@ -34,7 +34,7 @@
 #### 2.注销当前安装的Linux发行版
     wsl.exe --unregister Debian
 #### 3.将Linux子系统导入到E盘
-    
+    wsl.exe --import Debian e:\RJKJ\wsl\Debian d:\wsl-Debian.tar --version 2
 
 
 ## [WSL数据包下载](https://github.com/microsoft/WSL)
