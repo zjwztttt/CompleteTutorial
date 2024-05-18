@@ -2,6 +2,7 @@
 
 <details markdown="1">
 <summary>
+
 ```diff
 + this will be highlighted in green
 - 启用“适用于Linux的Windows子系统”功能(方案二可跳过)
