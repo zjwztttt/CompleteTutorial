@@ -30,6 +30,8 @@
     apt update && apt upgrade -y
 ## 四、将Linux子系统迁出C盘
 #### 1.压缩并导出Linux子系统到D盘
+    wsl.exe --export Debian d:\wsl-Debian.tar
+#### 2.注销当前安装的Linux发行版
 
 
 
