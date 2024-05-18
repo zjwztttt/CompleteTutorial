@@ -63,6 +63,7 @@
 #### 2.新建一个.wslconfig文件并且粘贴以下配置
     # Settings apply across all Linux distros running on WSL 2
     [wsl2]
+    # 分配给WSL的内存
     memory=4GB
     swap=2GB
     localhostforwarding=true
