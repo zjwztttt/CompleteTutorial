@@ -56,8 +56,13 @@
 </details>
 
 ```diff
-+ this will be highlighted in green
-- this will be highlighted in red
++ 打开运行窗口，输入%UserProfile%打开用户文件夹
+- 新建一个.wslconfig文件并且粘贴以下配置
+# Settings apply across all Linux distros running on WSL 2
+[wsl2]
+memory=4GB
+swap=2GB
+localhostforwarding=true
 ```
 
 ## [WSL数据包下载](https://github.com/microsoft/WSL)
