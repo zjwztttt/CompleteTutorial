@@ -1,18 +1,8 @@
 ## Windows Subsystem for Linux 安装教程
 
-<font color=red>我是红色</font>
-
-<font color=#008000>我是绿色</font>
-
-<font color=Blue>我是蓝色</font>
-
-<font size=5>我是尺寸</font>
-
-<font face="黑体" color=green size=5>我是黑体，绿色，尺寸为5</font>
-
 <details markdown="1">
 <summary>
-<font color=red>启用“适用于Linux的Windows子系统”功能(方案二可跳过)</font>
+<font style="color:red">启用“适用于Linux的Windows子系统”功能(方案二可跳过)</font>
 </summary>
 
 #### 1.在windows任务栏中的搜索框里搜索并打开`启用或关闭windows功能`
