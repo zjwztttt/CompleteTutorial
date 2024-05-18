@@ -2,8 +2,7 @@
 
 <details markdown="1">
 <summary>
-
-## 启用“适用于Linux的Windows子系统”功能(点击展开方案二可跳过)
+<title>启用“适用于Linux的Windows子系统”功能(点击展开方案二可跳过)</title>
 </summary>
 
 #### 1.在windows任务栏中的搜索框里搜索并打开`启用或关闭windows功能`
