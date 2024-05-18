@@ -1,7 +1,7 @@
 ## Windows Subsystem for Linux 安装教程
 
 <details markdown="1">
-<summary color=red>
+<summary color="red">
 启用“适用于Linux的Windows子系统”功能(方案二可跳过)
 </summary>
 
