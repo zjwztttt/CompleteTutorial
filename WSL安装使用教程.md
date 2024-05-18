@@ -32,7 +32,9 @@
 #### 1.压缩并导出Linux子系统到D盘
     wsl.exe --export Debian d:\wsl-Debian.tar
 #### 2.注销当前安装的Linux发行版
-
+    wsl.exe --unregister Debian
+#### 3.将Linux子系统导入到E盘
+    
 
 
 ## [WSL数据包下载](https://github.com/microsoft/WSL)
