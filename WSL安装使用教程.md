@@ -1,6 +1,6 @@
 ## Windows Subsystem for Linux 安装教程
 
-+1<span style=“color:red;”>text</span>
++1 red
 
 <details markdown="1">
 <summary>
