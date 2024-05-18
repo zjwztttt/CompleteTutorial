@@ -65,7 +65,9 @@
     [wsl2]
     # 分配给WSL的内存
     memory=4GB
+    # 设置交换分区的容量
     swap=2GB
+    
     localhostforwarding=true
 </details>
 
