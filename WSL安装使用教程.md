@@ -3,7 +3,7 @@
 <details markdown="1">
 <summary>
 
-<font color="red">
+<font color=red>
 启用“适用于Linux的Windows子系统”功能(方案二可跳过)
 </font>
 
