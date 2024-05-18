@@ -1,13 +1,21 @@
 ## Windows Subsystem for Linux 安装教程
+
 ## 一、启用“适用于Linux的Windows子系统”功能
 #### 1.在windows任务栏中的搜索框里搜索并打开`启用或关闭windows功能`
 #### 2.向下滑动列表找到并勾选`适用于Linux的Windows子系统`，然后点击确定
 #### 3.等待功能启用完成后点击`立即重新启动`
+
 ## 二、下载安装Linux子系统
 ### 方案一
 #### 1.打开`Microsoft Store`
 #### 2.搜索并下载`Debian`
-#### 3.
+#### 3.更新WSL到最新版
+### 方案二
+#### 1.以管理员身份运行`终端`
+#### 2.下载并安装`Debian`
+    wsl --install Debian
+### 方案三
+#### 1.
 
 
 ## [WSL数据包下载](https://github.com/microsoft/WSL)
