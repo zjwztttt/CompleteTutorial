@@ -4,7 +4,7 @@
 <summary>
 
 ```diff
-- 启用“适用于Linux的Windows子系统”功能(方案二可跳过)
+ 启用“适用于Linux的Windows子系统”功能(方案二可跳过)
 ```
 </summary>
 
