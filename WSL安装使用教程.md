@@ -8,8 +8,8 @@
 
 </details>
 
+<details markdown="1"><summary>下载安装Linux子系统</summary>
 
-## 二、下载安装Linux子系统
 ### 方案一
 #### 1.打开`Microsoft Store`
 #### 2.搜索并下载`Debian`
@@ -25,6 +25,10 @@
 #### 2.运行`终端管理员`并进入安装包所在的文件夹
 #### 3.安装`Debian`
     Add-AppxPackage .\Debian.appx
+
+</details>
+
+
 
 ## 三、配置使用Linux子系统
 #### 1.首次打开Linux子系统需要设置登录账号和密码(个人本地使用没有必要设置！)
