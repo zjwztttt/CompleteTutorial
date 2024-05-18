@@ -1,7 +1,7 @@
 # CompleteTutorial
 ## 这个库用于存放本人多年来自用的一些工具的使用教程
 #### 1.[Rust安装与使用](https://github.com/zjwztttt/CompleteTutorial/blob/main/Rust%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8.md),
-#### 2.[WSL安装教程](WSL安装教程.md)
+#### 2.[WSL安装使用教程](WSL安装教程.md)
 #### 3.[Docker安装与使用](https://github.com/zjwztttt/CompleteTutorial/blob/main/Docker%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8.md)
 #### 4.[Linux使用教程](https://github.com/zjwztttt/CompleteTutorial/blob/main/Linux%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.md)
 #### 5.[Linux证书申请教程](https://github.com/zjwztttt/CompleteTutorial/blob/main/Linux%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E6%95%99%E7%A8%8B.md)
