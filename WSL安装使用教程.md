@@ -24,7 +24,7 @@
 #### 3.安装`Debian`
     Add-AppxPackage .\Debian.appx
 
-## 三、设置登录账号和登录密码
+## 三、配置Linux子系统
 
 
 ## [WSL数据包下载](https://github.com/microsoft/WSL)
