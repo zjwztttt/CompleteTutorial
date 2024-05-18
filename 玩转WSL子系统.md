@@ -3,6 +3,8 @@
     wsl.exe --install -d Debian
 ### 2. 更新WSL
     wsl.exe --update
+### 3. 显示WSL状态(包括默认版本以及发行版)
+    wsl --status
 ### 3. 查看安装在本地的WSL子系统
     wsl.exe -l --all  -v
 ### 4. 列出可用的Linux发行版
