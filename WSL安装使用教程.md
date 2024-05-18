@@ -3,6 +3,7 @@
 ```diff
 + this will be highlighted in green
 - this will be highlighted in red
+```
 
 <details markdown="1">
 <summary>
