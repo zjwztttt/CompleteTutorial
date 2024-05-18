@@ -15,7 +15,9 @@
 #### 2.下载并安装`Debian`
     wsl --install Debian
 ### 方案三
-#### 1.
+#### 1.下载[Linux子系统安装包](https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions)
+#### 2.打开`终端`并进入安装包所在的文件夹
+#### 3.
 
 
 ## [WSL数据包下载](https://github.com/microsoft/WSL)
