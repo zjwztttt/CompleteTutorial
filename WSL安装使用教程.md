@@ -1,5 +1,7 @@
 ## Windows Subsystem for Linux 安装教程
 
+<span style="color:blue">这是**蓝色**的文字</span>
+
 <details markdown="1">
 <summary>
 启用“适用于Linux的Windows子系统”功能(方案二可跳过)
