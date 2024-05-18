@@ -61,13 +61,13 @@
 #### 1.打开运行窗口输入以下命令打开用户文件夹
     %UserProfile%
 #### 2.新建一个.wslconfig文件并且粘贴以下配置
-    # Settings apply across all Linux distros running on WSL 2
+    # 设置适用于在WSL 2上运行的所有Linux发行版
     [wsl2]
     # 分配给WSL的内存
     memory=4GB
     # 设置交换分区的容量
     swap=2GB
-    
+    # 指定绑定到 WSL VM 中的通配符或localhost 的端口是否可通过 localhost:port 从主机连接
     localhostforwarding=true
 </details>
 
