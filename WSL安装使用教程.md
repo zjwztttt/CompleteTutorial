@@ -1,6 +1,6 @@
 ## Windows Subsystem for Linux 安装教程
 
-<span style="color:red">这是**蓝色**的文字</span>
++1 为：<span style=“color:red;”> text </span>
 
 <details markdown="1">
 <summary>
