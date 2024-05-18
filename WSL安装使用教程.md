@@ -25,7 +25,7 @@
 ## 三、配置使用Linux子系统
 #### 1.首次打开Linux子系统需要设置登录账号和密码(个人本地使用没有必要设置！)
 #### 2.打开`终端`设置默认登录账号为root
-    sudo -i
+    Debian config --default-user root
 #### 3.
 
 
