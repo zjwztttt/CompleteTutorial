@@ -32,13 +32,17 @@
 </details>
 
 
+<details markdown="1">
+<summary>配置使用Linux子系统</summary>
 
-## 三、配置使用Linux子系统
 #### 1.首次打开Linux子系统需要设置登录账号和密码(个人本地使用没有必要设置！)
 #### 2.运行`终端管理员`设置默认登录账号为root
     Debian config --default-user root
 #### 3.更新Linux子系统
     apt update && apt upgrade -y
+
+</details>
+
 ## 四、将Linux子系统迁出C盘
 #### 1.压缩并导出Linux子系统到D盘
     wsl.exe --export Debian d:\wsl-Debian.tar
