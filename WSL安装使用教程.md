@@ -55,13 +55,18 @@
 
 </details>
 
-#### 1.打开运行窗口，输入%UserProfile%打开用户文件夹
+<details markdown="1">
+<summary>限制Linux子系统的内存</summary>
+
+#### 1.打开运行窗口输入以下命令打开用户文件夹
+    %UserProfile%
 #### 2.新建一个.wslconfig文件并且粘贴以下配置
     # Settings apply across all Linux distros running on WSL 2
     [wsl2]
     memory=4GB
     swap=2GB
     localhostforwarding=true
+</details>
 
 ## [WSL数据包下载](https://github.com/microsoft/WSL)
 ## [玩转WSL子系统](玩转WSL子系统.md)
