@@ -39,3 +39,5 @@
     g++ --version
 ### 安装CMake编译器
     apt install cmake
+### 查看系统版本
+    cat /etc/os-release
