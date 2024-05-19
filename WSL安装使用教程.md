@@ -71,6 +71,10 @@
     swap=2GB
     # 指定绑定到 WSL VM 中的通配符或localhost 的端口是否可通过 localhost:port 从主机连接
     localhostforwarding=true
+#### 3.保存以后执行如下命令关闭WSL
+    wsl --shutdown
+#### 4.打开Linux子系统输入以下命令查看内存
+    free -h
 </details>
 
 ## [WSL数据包下载](https://github.com/microsoft/WSL)
