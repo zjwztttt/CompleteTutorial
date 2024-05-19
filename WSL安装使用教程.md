@@ -22,7 +22,7 @@
 #### 2.列出可以安装的Linux子系统的发行版
     wsl.exe -l -o
 #### 3.下载并安装`Debian`
-    wsl.exe --install Debian
+    wsl.exe --install Debian --no-launch
 ### 方案三
 #### 1.下载[Linux子系统安装包](https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions)
 #### 2.运行`终端管理员`并进入安装包所在的文件夹
