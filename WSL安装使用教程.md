@@ -19,12 +19,10 @@
 #### 3.更新WSL到最新版
 ### 方案二
 #### 1.运行`终端管理员`
-#### 2.安装WSL
-    wsl.exe --install --no-distribution
-#### 3.列出可以安装的Linux子系统的发行版
+#### 2.列出可以安装的Linux子系统的发行版
     wsl.exe -l -o
-#### 4.下载并安装`Debian`
-    wsl.exe --install Debian --no-launch
+#### 3.下载并安装`Debian`
+    wsl.exe --install Debian
 ### 方案三
 #### 1.下载[Linux子系统安装包](https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions)
 #### 2.运行`终端管理员`并进入安装包所在的文件夹
@@ -72,7 +70,7 @@
     # 指定绑定到 WSL VM 中的通配符或localhost 的端口是否可通过 localhost:port 从主机连接
     localhostforwarding=true
 #### 3.保存以后执行如下命令关闭WSL
-    wsl --shutdown
+    wsl.exe --shutdown
 #### 4.打开Linux子系统输入以下命令查看内存
     free -h
 </details>
