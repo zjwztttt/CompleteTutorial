@@ -19,9 +19,11 @@
 #### 3.更新WSL到最新版
 ### 方案二
 #### 1.运行`终端管理员`
-#### 2.列出可以安装的Linux子系统的发行版
+#### 2.安装WSL
+    wsl.exe --install --no-distribution
+#### 3.列出可以安装的Linux子系统的发行版
     wsl.exe -l -o
-#### 3.下载并安装`Debian`
+#### 4.下载并安装`Debian`
     wsl.exe --install Debian --no-launch
 ### 方案三
 #### 1.下载[Linux子系统安装包](https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions)
