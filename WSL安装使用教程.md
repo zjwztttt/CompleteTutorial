@@ -26,8 +26,12 @@
 ### 方案三
 #### 1.下载[Linux子系统安装包](https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions)
 #### 2.运行`终端管理员`并进入安装包所在的文件夹
-#### 3.安装`Debian`
-    Add-AppxPackage .\Debian.appx
+#### 3.将安装包转换为zip压缩包
+    Rename-Item .\Debian.AppxBundle .\Debian.zip
+#### 4.解压zip压缩包
+    Expand-Archive .\Debian.zip .\Debian
+#### 5.安装`Debian`
+    Add-AppxPackage .\Debian\Debianx64.appx
 
 </details>
 
