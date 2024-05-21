@@ -25,13 +25,13 @@
     wsl.exe --install Debian
 ### 方案三
 #### 1.下载[Linux子系统安装包](https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions)
-#### 2.运行`终端管理员`并进入安装包所在的文件夹
-#### 3.将安装包转换为zip压缩包
-    Rename-Item .\Debian.AppxBundle .\Debian.zip
-#### 4.解压zip压缩包
-    Expand-Archive .\Debian.zip .\Debian
-#### 5.安装`Debian`
-    Add-AppxPackage .\Debian\Debianx64.appx
+#### 2.安装`Debian`
+#### 3.更新WSL到最新版
+
+### 方案四(离线/无网络环境安装)
+#### 1.下载并安装WSL安装包
+#### 2.将方案三下载的Linux子系统的安装包解压到任意文件夹里
+#### 3.双击运行Debian.exe
 
 </details>
 
@@ -79,5 +79,5 @@
     free -h
 </details>
 
-## [WSL数据包下载](https://github.com/microsoft/WSL)
+## [WSL安装包下载](https://github.com/microsoft/WSL)
 ## [玩转WSL子系统](玩转WSL子系统.md)
