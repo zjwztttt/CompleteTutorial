@@ -35,6 +35,8 @@
 #### 4.在`运行`窗口中输入以下命令并点击确定
     shell:programs
 #### 5.将Debian的快捷方式剪切到打开的目录中
+#### 6.如果打开Debian报错，可以在终端管理员窗口执行以下命令
+    dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 
 </details>
 
