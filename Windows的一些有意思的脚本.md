@@ -11,32 +11,56 @@
     cd 程序所在路径
     程序名称或启动命令
     exit
-#### Regedit脚本，给通过解压缩部署的绿色程序开启右键菜单的功能
+#### Batch脚本，隐藏桌面快捷方式小箭头
+    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons" /v 29 /d "%systemroot%\system32\imageres.dll,197" /t reg_sz /f
+    
+    taskkill /f /im explorer.exe
+    
+    attrib -s -r -h "%userprofile%\AppData\Local\iconcache.db"
+    
+    del "%userprofile%\AppData\Local\iconcache.db" /f /q
+    
+    start explorer
+    
+    Pause
+#### Batch脚本，恢复桌面快捷方式小箭头
+    reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons" /v 29 /f
+    
+    taskkill /f /im explorer.exe
+    
+    attrib -s -r -h "%userprofile%\AppData\Local\iconcache.db"
+    
+    del "%userprofile%\AppData\Local\iconcache.db" /f /q
+    
+    start explorer
+    
+    pause
+#### Regedit脚本，将脚本黏贴到`.reg`后缀的文件中并修改脚本中的注册表项、显示名称和执行程序路径，给通过解压缩部署的绿色程序开启右键菜单的功能
     Windows Registry Editor Version 5.00
     
-    [HKEY_CLASSES_ROOT\*\shell\VSCode]
-    @="Open with &VSCode"
-    "Icon"="E:\\RJAZ\\VSCode\\Code.exe"
+    [HKEY_CLASSES_ROOT\*\shell\注册表项]
+    @="显示在Windows的右键菜单中的名称"
+    "Icon"="执行程序的路径"
     
-    [HKEY_CLASSES_ROOT\*\shell\VSCode\Command]
-    @="E:\\RJAZ\\VSCode\\Code.exe \"%1\""
+    [HKEY_CLASSES_ROOT\*\shell\注册表项\Command]
+    @="执行程序的路径 \"%1\""
     
-    [HKEY_CLASSES_ROOT\Directory\shell\VSCode]
-    @="Open with &VSCode"
-    "Icon"="E:\\RJAZ\\VSCode\\Code.exe"
+    [HKEY_CLASSES_ROOT\Directory\shell\注册表项]
+    @="显示在Windows的右键菜单中的名称"
+    "Icon"="执行程序的路径"
     
-    [HKEY_CLASSES_ROOT\Directory\shell\VSCode\Command]
-    @="E:\\RJAZ\\VSCode\\Code.exe \"%V\""
+    [HKEY_CLASSES_ROOT\Directory\shell\注册表项\Command]
+    @="执行程序的路径 \"%V\""
     
-    [HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]
-    @="Open with &VSCode"
-    "Icon"="E:\\RJAZ\\VSCode\\Code.exe"
+    [HKEY_CLASSES_ROOT\Directory\Background\shell\注册表项]
+    @="显示在Windows的右键菜单中的名称"
+    "Icon"="执行程序的路径"
     
-    [HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode\Command]
-    @="E:\\RJAZ\\VSCode\\Code.exe \"%V\""
+    [HKEY_CLASSES_ROOT\Directory\Background\shell\注册表项\Command]
+    @="执行程序的路径 \"%V\""
 #### Regedit脚本，删除注册表中的项
     Windows Registry Editor Version 5.00
     
-    [-HKEY_CLASSES_ROOT\*\shell\VSCode]
-    [-HKEY_CLASSES_ROOT\Directory\shell\VSCode]
-    [-HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]
+    [-HKEY_CLASSES_ROOT\*\shell\注册表项]
+    [-HKEY_CLASSES_ROOT\Directory\shell\注册表项]
+    [-HKEY_CLASSES_ROOT\Directory\Background\shell\注册表项]
