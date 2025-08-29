@@ -34,3 +34,9 @@
     
     [HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode\Command]
     @="E:\\RJAZ\\VSCode\\Code.exe \"%V\""
+#### Regedit脚本，删除注册表中的项
+    Windows Registry Editor Version 5.00
+    
+    [-HKEY_CLASSES_ROOT\*\shell\VSCode]
+    [-HKEY_CLASSES_ROOT\Directory\shell\VSCode]
+    [-HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]
