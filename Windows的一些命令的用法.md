@@ -21,3 +21,9 @@
 ## 5.打开用户文件夹
 #### 在`运行`输入框中输入以下这条命令点击确定后会打开当前登录账号的文件夹
     %UserProfile%
+
+## 5.给解压缩免安装版的`Notpad++`在`Windows右键菜单中`开启`使用Notepad++编辑`功能
+#### `Notepad++8.5`之前的版本，需下载`NppShell_06.dll`文件并将其保存在`Notepad++的根目录`下，在`终端(管理员)`中进入`Notepad++根目录`执行下面这条命令
+    regsvr32 /i NppShell_06.dll
+#### `Notepad++8.5.1`之后的版本，需下载`contextMenu`文件夹并将其保存在`Notepad++的根目录`下，在`终端(管理员)`中进入`contextMenu目录`执行下面这条命令
+    regsvr32 NppShell.dll
