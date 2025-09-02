@@ -1,4 +1,4 @@
-## Linux中的服务`.service`文件，以下只列出配置一版程序够用，更详细的配置请[参考](https://blog.csdn.net/blood_Z/article/details/128848056)或者[参考备份](Linux/Linux的service文件详解.md)
+## Linux中的服务`.service`文件，以下只列出配置一版程序够用，更详细的配置请[参考](https://blog.csdn.net/blood_Z/article/details/128848056)或者[参考备份](Linux的service文件详解.md)
     [Unit]
     Description=fraps service
     After=network.target syslog.target
