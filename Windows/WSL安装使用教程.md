@@ -6,8 +6,9 @@
 </summary>
 
 #### 1.在windows任务栏中的搜索框里搜索并打开`启用或关闭 Windows 功能`
-#### 2.向下滑动列表找到并勾选`适用于Linux的Windows子系统`，然后点击确定
-#### 3.等待功能启用完成后点击`立即重新启动`
+#### 2.向下滑动列表找到并勾选`适用于Linux的Windows子系统`或者`Windows Subsystem for Linux(WSL1 support)`
+#### 3.勾选`虚拟机平台`或者`Virtual Machine Platform`然后点击确定
+#### 4.等待功能启用完成后点击`立即重新启动`
 
 </details>
 

@@ -39,5 +39,11 @@
     g++ --version
 ### 安装CMake编译器
     apt install cmake
+### 安装glibc库
+    apt install libc6
+### 验证glibc版本
+    ldd --version
+### 检查应用程序是否依赖系统库
+    ldd 你的程序名
 ### 查看系统版本
     cat /etc/os-release

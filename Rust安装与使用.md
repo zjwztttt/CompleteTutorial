@@ -30,11 +30,13 @@
 ## 五、编译程序
     cargo build --release --target=x86_64-pc-windows-msvc
 
-## 六、交叉编译
+## 六、卸载Rust编译环境
+    rustup self uninstall
+## 七、交叉编译
 ### [《Linux环境编译Windows可执行程序》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Linux%E7%8E%AF%E5%A2%83%E4%B8%8BRust%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91Windows%E7%A8%8B%E5%BA%8F.md)
 ### [《Windows环境编译Linux可执行程序》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Windows%E7%8E%AF%E5%A2%83%E4%B8%8BRust%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91Linux%E7%A8%8B%E5%BA%8F.md)
 
-## 七、其他
+## 八、其他
 ### [《Ruat的一些常用命令》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Rust%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
 ### [《Rust使用wasm-pack编译WebAssembly》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Rust%E4%BD%BF%E7%94%A8wasm-pack%E7%BC%96%E8%AF%91WebAssembly%E6%A8%A1%E5%9D%97.md)
 ### [《Rust使用Trunk编译WebAssembly》](https://github.com/zjwztttt/CompleteTutorial/blob/main/Rust%E4%BD%BF%E7%94%A8Trunk%E7%BC%96%E8%AF%91WebAssembly%E6%A8%A1%E5%9D%97.md)
