@@ -10,17 +10,17 @@
 ## 三、创建项目：
 ### 选定一个空文件夹作为项目的存放目录
     cargo new 项目名称
-## 四、静态编译(GNU)：
+## 四、静态编译(musl推荐)：
+### 在Debian终端窗口中执行以下命令安装`musl`工具链
+    rustup target add x86_64-unknown-linux-musl
+### 在Debian终端窗口中的项目根目录下执行以下命令编译项目
+    cargo build --release --target x86_64-unknown-linux-musl
+## 五、静态编译(GNU)：
 ### 在项目的根目录创建`.cargo`文件夹，在`.cargo`文件夹中创建`config.toml`文件并在文件内编辑以下配置
     [target.x86_64-unknown-linux-gnu]
     rustflags = ["-C", "target-feature=+crt-static"]
 ### 在Debian终端窗口中的项目根目录下执行以下命令编译项目
     cargo build --release
-## 五、静态编译(musl)：
-### 在Debian终端窗口中执行以下命令安装`musl`工具链
-    rustup target add x86_64-unknown-linux-musl
-### 在Debian终端窗口中的项目根目录下执行以下命令编译项目
-    cargo build --release --target x86_64-unknown-linux-musl
 ## 六、遇到问题：
 ### 在执行编译运行命令时Debian终端窗口中显示以下错误内容
     error: linker `cc` not found
