@@ -21,7 +21,7 @@
     rustflags = ["-C", "target-feature=+crt-static"]
 ### 在Debian终端窗口中的项目根目录下执行以下命令编译项目
     cargo build --release
-## 六、想在Debian系统环境下编译出可在Windows系统中运行的程序请前往[查看交叉编译](Linux环境下Rust交叉编译Windows程序.md)
+## 六、想在Debian系统环境下编译出可在Windows系统中运行的程序请前往[查看交叉编译](https://github.com/zjwztttt/CompleteTutorial/blob/f99982398398bfdfe284cab1919098afbfe2e0cd/Linux%E7%8E%AF%E5%A2%83%E4%B8%8BRust%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91Windows%E7%A8%8B%E5%BA%8F.md)
 ## 七、遇到问题：
 ### 在执行编译运行命令时Debian终端窗口中显示以下错误内容
     error: linker `cc` not found
